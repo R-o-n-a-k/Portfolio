@@ -788,3 +788,17 @@ footer{
     font-family: var(--subtitle-font);
     color: var(--color-subtitle);
 }
+
+
+
+// ----------------Scroll Bar--------------
+
+::-webkit-scrollbar{
+    width: .5rem;
+    background-color: var(--color-grey-4);
+    border-radius: .3rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color:var(--color-grey-5) ;
+    border-radius: .3rem;
+}

@@ -719,4 +719,15 @@ footer {
   font-size: 0.7rem;
   font-family: var(--subtitle-font);
   color: var(--color-subtitle);
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: var(--color-grey-4);
+  border-radius: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-grey-5);
+  border-radius: 0.3rem;
 }/*# sourceMappingURL=style.css.map */
