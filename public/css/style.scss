@@ -26,6 +26,7 @@ html {
     --color-title: #E7ECEF;
     --color-subtitle: #ADB5BD;
     --color-blue-4:#0779e4;
+    --color-blue-1:#4bb3fd;
     --color-grey-0: #f8f8f8;
     --color-grey-1: #dbe1e8;
     --color-grey-2: #b2becd;
@@ -635,7 +636,7 @@ body {
                 color: var(--color-secondary);
                 transition: var(--animate);
                 &:hover {
-                    color: var(--color-quaternary);
+                    color: var(--color-tertiary);
                     
                 }
             }
@@ -691,7 +692,7 @@ body {
                         p{
                             font-weight: 500;
                             letter-spacing: .1rem;
-                            font-size: 1.1rem;
+                            font-size: 1.2rem;
                             font-family: var(--body-font);
                             color:var(--color-title);
                             padding: 1.1rem;
