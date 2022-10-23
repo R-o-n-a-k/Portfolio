@@ -138,6 +138,50 @@ body {
   font-family: var(--body-font);
   color: var(--color-quaternary);
 }
+.hero .detail p span {
+  font-size: 1.5rem;
+}
+.hero .detail p .cursor {
+  display: inline-block;
+  width: 0.1rem;
+  background-color: var(--color-quaternary);
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+@-webkit-keyframes blink {
+  0% {
+    background-color: var(--color-quaternary);
+  }
+  49% {
+    background-color: var(--color-quaternary);
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: var(--color-quaternary);
+  }
+}
+@keyframes blink {
+  0% {
+    background-color: var(--color-quaternary);
+  }
+  49% {
+    background-color: var(--color-quaternary);
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: var(--color-quaternary);
+  }
+}
 .hero .detail a {
   background: var(--color-secondary);
   padding: 1rem;
@@ -730,4 +774,7 @@ footer {
 ::-webkit-scrollbar-thumb {
   background-color: var(--color-grey-5);
   border-radius: 0.3rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-black-1);
 }/*# sourceMappingURL=style.css.map */

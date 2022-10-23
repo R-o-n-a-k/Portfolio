@@ -1,6 +1,5 @@
 (function () {
   "use strict";
-
   // define variables
   var items = document.querySelectorAll(".timeline li");
 
@@ -64,6 +63,8 @@ function topFunction() {
   document.documentElement.scrollTop = 0; 
 }
 
+
+// -------------project swipper---------------
 var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 30,
@@ -78,9 +79,62 @@ var swiper = new Swiper(".mySwiper", {
         },
       });
 
-// clearing data after submit
+//-------------- clearing form data after submit--------
 window.onbeforeunload = () => {
   for(const form of document.getElementsByTagName('form')) {
     form.reset();
   }
 }
+
+// -----------------my typing--------------------
+const typedTextSpan = document.querySelector('.typed-text');
+const cursorSpan = document.querySelector('.cursor');
+
+const textArray = [
+  'Frontend Developer.',
+  'Automation Tester.',
+  'Senior Analyst',
+];
+const typingDelay = 120;
+const erasingDelay = 90;
+const newTextDelay = 200; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if (!cursorSpan.classList.contains('typing'))
+      cursorSpan.classList.add('typing');
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } else {
+    cursorSpan.classList.remove('typing');
+    setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+  if (charIndex > 0) {
+    if (!cursorSpan.classList.contains('typing'))
+      cursorSpan.classList.add('typing');
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(
+      0,
+      charIndex - 1
+    );
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } else {
+    cursorSpan.classList.remove('typing');
+    textArrayIndex++;
+    if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+    setTimeout(type, typingDelay + 500);
+  }
+}
+
+window.addEventListener('load', function () {
+  // On DOM Load initiate the effect
+  if (textArray.length) setTimeout(type, newTextDelay + 200);
+});
+
+// ----------------my typing end---------------

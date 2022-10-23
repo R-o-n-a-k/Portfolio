@@ -134,11 +134,43 @@ body {
             }
         }
         p{
-            
             font-family: var(--body-font);
-            color: var(--color-quaternary);
+            color: var(--color-quaternary);            
+            span{
+                font-size: 1.5rem;
+            }
+            .cursor {
+                        display: inline-block;
+                        
+                        width: .1rem;
+                        background-color: var(--color-quaternary);
+                        animation: blink 1s infinite;
+                }
+                
+                    @keyframes blink {
+                        0% {
+                          background-color: var(--color-quaternary);
+                        }
+                
+                        49% {
+                            background-color: var(--color-quaternary);
+                        }
+                
+                        50% {
+                            background-color: transparent;
+                        }
+                
+                        99% {
+                            background-color: transparent;
+                        }
+                
+                        100% {
+                            background-color: var(--color-quaternary);
+                        }
+                    }
+            
         }
-
+                
         
         a{
             background: var(--color-secondary);
@@ -801,4 +833,7 @@ footer{
 ::-webkit-scrollbar-thumb{
     background-color:var(--color-grey-5) ;
     border-radius: .3rem;
+    &:hover{
+        background-color: var(--color-black-1);
+    }
 }
