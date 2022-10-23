@@ -220,6 +220,7 @@ body {
   padding: 2rem;
 }
 .about .all-about-section .about-section-box .about-section-desc {
+  text-align: justify;
   background-color: var(--color-tertiary);
   padding: 2rem;
   height: 25rem;

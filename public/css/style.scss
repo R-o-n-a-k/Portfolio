@@ -134,6 +134,7 @@ body {
             }
         }
         p{
+            
             font-family: var(--body-font);
             color: var(--color-quaternary);
         }
@@ -227,7 +228,7 @@ body {
             width: 65%;
             padding:2rem;
             .about-section-desc{
-                
+                text-align: justify;
                 background-color: var(--color-tertiary);
                 padding: 2rem;
                 height: 25rem;

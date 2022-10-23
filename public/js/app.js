@@ -79,7 +79,9 @@ var swiper = new Swiper(".mySwiper", {
       });
 
 
-
-
-
-
+// clearing data after submit
+window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}

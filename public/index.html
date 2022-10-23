@@ -416,7 +416,7 @@
                             <lord-icon src="https://cdn.lordicon.com/kjkiqtxg.json" trigger="hover"
                                 colors="outline:#ffffff,primary:#0f4c75,secondary:#4bb3fd,tertiary:#bbe1fa">
                             </lord-icon>
-                            <h5>9819518418</h5>
+                            <h5>+91 9819518418</h5>
                         </div>
                         <div class="contact-icon-detail">
                             <lord-icon src="https://cdn.lordicon.com/fihkmkwt.json" trigger="hover"
@@ -436,27 +436,28 @@
 
                 </div>
 
-                <form class="contact-form" id="#contact-form" name="contact-form">
+                <form class="contact-form" id="contact-form" name="contact-form"
+                    action="https://formspree.io/f/mdojlrrq" method="POST">
 
                     <div class="contact-detail">
                         <label for="" class="contact-label">Name</label>
-                        <input type="text" class="contact-input" placeholder="Ronak Patel" required>
+                        <input type="text" name="name" class="contact-input" placeholder="Ronak Patel" required>
                     </div>
 
                     <div class="contact-detail">
                         <label for="" class="contact-label">Email</label>
-                        <input type="email" class="contact-input" placeholder="ronak@gmail.com" required>
+                        <input type="email" name="email" class="contact-input" placeholder="ronak@gmail.com" required>
                     </div>
 
 
                     <div class="contact-detail">
                         <label for="" class="contact-label">Message</label><br>
-                        <textarea name="" class="contact-textarea" cols="0" rows="5" placeholder="Type your message..."
-                            required></textarea>
+                        <textarea name="message" class="contact-textarea" cols="0" rows="5"
+                            placeholder="Type your message..." required></textarea>
                     </div>
 
                     <div class="contact-button">
-                        <button href="http://" value="submit">Send<i class="fa-regular fa-paper-plane"></i></button>
+                        <button type="submit">Send<i class="fa-regular fa-paper-plane"></i></button>
                     </div>
 
                 </form>
