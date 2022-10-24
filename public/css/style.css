@@ -123,12 +123,21 @@ body {
 .hero nav li a:hover {
   color: var(--color-tertiary);
 }
+.hero nav .burger {
+  display: none;
+}
+.hero nav .burger div {
+  margin: 5px;
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-grey-1);
+}
 .hero .detail {
   margin-left: 14%;
   margin-top: 10%;
 }
 .hero .detail h1 {
-  font-size: 50px;
+  font-size: 3.2rem;
   color: var(--color-grey0);
 }
 .hero .detail h1 span {
@@ -776,6 +785,173 @@ footer {
   color: var(--color-subtitle);
 }
 
+@media only screen and (max-width: 1400px) {
+  .hero nav li {
+    margin: 1.5rem 1.2rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .hero nav {
+    font-size: 0.8rem;
+  }
+  .hero .detail h1 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .hero nav li {
+    margin: 1.5rem 0.5rem;
+  }
+  .hero .detail h1 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .hero nav img {
+    height: 15%;
+    width: 20%;
+  }
+  .hero nav li {
+    display: none;
+  }
+  .hero nav .burger {
+    display: block;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 0.9rem;
+  }
+  body .hero .my-img img {
+    height: 40vh;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+  body .hero .detail {
+    position: absolute;
+    bottom: 8rem;
+  }
+  body .hero .detail a {
+    padding: 0.9rem;
+  }
+  body .hero .social-media {
+    bottom: 5%;
+    left: 50%;
+    transform: translate(10%, 1%);
+  }
+  body .about .about-heading .about-title {
+    font-size: 1.8rem;
+  }
+  body .about .about-heading .about-subtitle {
+    font-size: 0.9rem;
+  }
+  body .about .all-about-section {
+    font-size: 0.9rem;
+  }
+  body .about .all-about-section .about-section-box {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+  }
+  body .about .all-about-section .about-section-box .about-section-desc {
+    margin: 0;
+    padding: 1rem;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: 100%;
+  }
+  body .about .all-about-section .about-section-box img {
+    margin: 1.5rem 0;
+    height: 35vh;
+    width: 50%;
+  }
+  body .skills {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+  body .skills .skills-heading .skills-title {
+    font-size: 1.8rem;
+  }
+  body .skills .skills-heading .skills-subtitle {
+    font-size: 0.9rem;
+  }
+  body .skills .skills-content .containerSkill {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    padding: 1rem 2rem;
+  }
+  body .skills .skills-content .containerSkill .skill-box {
+    font-size: 0.9rem;
+  }
+  body .skills .skills-content .containerSkill .skill-box .skill-Title img {
+    width: 50%;
+  }
+  body .qualifications .qualifications-heading .qualifications-title {
+    font-size: 1.8rem;
+  }
+  body .qualifications .qualifications-heading .qualifications-subtitle {
+    font-size: 0.9rem;
+  }
+  body .qualifications .qualifications-CONTENT .qualification_tabs .qualification_button {
+    font-size: 1.1rem;
+  }
+  body .qualifications .qualifications-CONTENT .timeline {
+    font-size: 0.9rem;
+  }
+  body .projects .projects-heading .projects-title {
+    font-size: 1.8rem;
+  }
+  body .projects .projects-heading .project-subtitle {
+    font-size: 0.9rem;
+  }
+  body .projects .project-content {
+    width: 100%;
+  }
+  body .projects .project-content .mySwiper {
+    margin: 0;
+  }
+  body .projects .project-content .mySwiper .project-box {
+    padding: 1rem;
+  }
+  body .projects .project-content .mySwiper .project-box .mainProject {
+    height: 65vh;
+    padding: 1rem;
+    flex-direction: column;
+  }
+  body .projects .project-content .mySwiper .project-box img {
+    margin: 1rem auto;
+    height: 25vh;
+    width: 70%;
+  }
+  body .projects .project-content .mySwiper .project-box .project-detail {
+    font-size: 0.9rem;
+    margin: 0rem;
+  }
+  body .projects .project-content .mySwiper .project-box .project-detail h3 {
+    font-size: 1rem;
+    margin-top: 1.1rem;
+  }
+  body .projects .project-content .mySwiper .project-box .project-detail p {
+    font-size: 0.9rem;
+  }
+  body .projects .project-content .mySwiper .project-box .project-detail a {
+    bottom: 0;
+    display: inline-block;
+    margin: 0.9rem auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.9rem;
+  }
+  body .projects .project-content .mySwiper .swipeBtn {
+    display: none;
+  }
+}
 ::-webkit-scrollbar {
   width: 0.5rem;
   background-color: var(--color-grey-4);
