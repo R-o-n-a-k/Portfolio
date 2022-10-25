@@ -94,37 +94,44 @@ body {
 }
 
 .hero {
-  position: relative;
   width: 100%;
   height: 100vh;
 }
 .hero nav {
+  width: 100%;
+  height: 10vh;
   display: flex;
-  width: 85%;
-  margin: auto;
-  padding: 1rem 0;
   align-items: center;
   justify-content: space-between;
 }
 .hero nav img {
-  height: 9vh;
+  margin-left: 4rem;
+  height: 8vh;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   cursor: pointer;
 }
-.hero nav li {
+.hero nav ul {
+  margin: 2rem 3rem;
+}
+.hero nav ul li {
   display: inline-block;
   list-style: none;
   margin: 1.5rem 1.7rem;
 }
-.hero nav li a {
+.hero nav ul li a {
   text-decoration: none;
   color: var(--color-grey-1);
   font-weight: bold;
   transition: var(--animate);
 }
-.hero nav li a:hover {
+.hero nav ul li a:hover {
   color: var(--color-tertiary);
 }
 .hero nav .burger {
+  position: relative;
+  right: 7%;
   display: none;
 }
 .hero nav .burger div {
@@ -786,97 +793,43 @@ footer {
   color: var(--color-subtitle);
 }
 
-@media only screen and (max-width: 1400px) {
-  .hero nav li {
-    margin: 1.5rem 1.2rem;
+@media only screen and (max-width: 1444px) {
+  body .about .all-about-section .about-section-box {
+    width: 80%;
+  }
+  body .projects .project-content .mySwiper {
+    margin: 0.2rem 5rem;
+  }
+  body .projects .project-content .mySwiper .project-box img {
+    height: 15rem;
+    width: 24rem;
+  }
+  body .contact .contact-container .contact-content .contact-form {
+    width: 100%;
+  }
+  body .contact .contact-container .contact-content .contact-form .imageDIV img {
+    right: 1rem;
   }
 }
 @media only screen and (max-width: 1200px) {
   .hero nav {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
-  .hero .detail h1 {
-    font-size: 2.5rem;
+  .hero nav ul li {
+    margin: 1.5rem 1rem;
   }
 }
 @media only screen and (max-width: 1024px) {
-  .hero nav li {
+  .hero nav ul li {
     margin: 1.5rem 0.5rem;
-  }
-  .hero .detail h1 {
-    font-size: 2rem;
   }
 }
 @media only screen and (max-width: 900px) {
-  body {
-    overflow-x: hidden;
+  .hero nav ul li {
+    display: none;
   }
-  body .hero nav {
-    width: 100%;
-    background-color: var(--color-primary);
-    position: fixed;
-    z-index: 120;
-  }
-  body .hero nav img {
-    margin-left: 1rem;
-    height: 20%;
-    width: 15%;
-  }
-  body .hero nav .nav-links {
-    position: fixed;
-    top: 0;
-    z-index: 50;
-    width: 100%;
-    height: 91vh;
-    top: 9vh;
-    background-color: var(--color-primary);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-  }
-  body .hero nav .burger {
-    position: fixed;
-    top: 3%;
-    right: 15%;
+  .hero nav .burger {
     display: block;
-    cursor: pointer;
-  }
-  body .hero nav .burger div {
-    transition: all 0.3s ease;
-  }
-  body .hero nav .nav-active {
-    transform: translateX(0%);
-  }
-  @-webkit-keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0px);
-    }
-  }
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0px);
-    }
-  }
-  body .hero nav .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-  body .hero nav .toggle .line2 {
-    opacity: 0;
-  }
-  body .hero nav .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
   }
 }
 @media only screen and (max-width: 767px) {
