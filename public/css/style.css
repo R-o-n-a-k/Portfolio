@@ -818,28 +818,31 @@ footer {
     display: block;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   body {
     font-size: 0.8rem;
   }
   body .hero .my-img img {
-    height: 40vh;
-    width: 40%;
+    height: 50vh;
+    width: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -100%);
   }
   body .hero .detail {
     position: absolute;
-    bottom: 8rem;
+    bottom: 12rem;
   }
   body .hero .detail a {
-    padding: 0.9rem;
+    padding: 0.8rem;
   }
   body .hero .social-media {
     bottom: 5%;
-    left: 45%;
+    left: 35%;
     transform: translate(10%, 1%);
+  }
+  body .hero .social-media i {
+    font-size: 1.5rem;
   }
   body .about {
     height: auto;
