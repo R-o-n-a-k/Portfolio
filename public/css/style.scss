@@ -910,7 +910,7 @@ footer{
                     img {
                         height: 50vh;
                         width: 50%;
-                        top: 50%;
+                        top: 55%;
                         left: 50%;
                         transform: translate(-50%, -100%);
                     }
@@ -918,17 +918,18 @@ footer{
         
                 .detail {
                     position: absolute;
-                    bottom: 12rem;
+                    bottom: 5rem;
                     a {
+                        
                         padding: .8rem;
                     }
                 }
                 .social-media{
-                    bottom: 5%;
-                    left: 35%;
+                    bottom: 0;
+                    left: 40%;
                     transform: translate(10%, 1%);
                     i{
-                        font-size:1.5rem;
+                        font-size:1.3rem;
                     }
                 }
             }
@@ -936,6 +937,7 @@ footer{
         .about {
             height: auto;
                 .about-heading{
+                    padding: 3rem 0;
                     .about-title{
                         font-size: 1.7rem;
                     }
@@ -973,6 +975,7 @@ footer{
         .skills {
             height:auto;
             .skills-heading{
+                padding: 3rem 0;
                     .skills-title{
                         font-size: 1.7rem;
                     }
@@ -983,8 +986,8 @@ footer{
             .skills-content{
                     .containerSkill{
                         grid-template-columns: repeat(3, 1fr);
-                        grid-gap: 1.5rem;
-                        padding: 3rem 4rem;
+                        grid-gap: 1rem;
+                        padding: 3rem .5rem;
                         .skill-box{
                             font-size:.8rem;
                             .skill-Title{
@@ -1002,6 +1005,7 @@ footer{
         .qualifications{
             height: auto;
             .qualifications-heading{
+                padding: 3rem 2rem;
                     .qualifications-title{
                         font-size: 1.7rem;
                     }
@@ -1026,6 +1030,7 @@ footer{
         .projects{
             height: auto;
             .projects-heading{
+                padding: 3rem 0;
                     .projects-title{
                         font-size: 1.7rem;
                     }
@@ -1040,8 +1045,9 @@ footer{
 
                     .project-box{
                         padding: 1rem;
+                        
                         .mainProject {
-                                height: 65vh;
+                                height: 66vh;
                                 padding: 1rem;
                                 flex-direction: column;
                             }
@@ -1049,7 +1055,7 @@ footer{
                             img {
                                 margin:1rem auto ;
                                 height: 25vh;
-                                width: 70%;
+                                width: 90%;
                             }
                         
                             .project-detail {
@@ -1061,16 +1067,16 @@ footer{
                                     margin-top: 1.1rem;
                                 }
                                 p {
-                                    font-size: .9rem;
+                                    font-size: .8rem;
                                 }
                         
                                 a {
-                                    bottom:0;
+                                    bottom:-1rem;
                                     display: inline-block;
-                                    margin: .9rem auto;
+                                    margin: 1rem auto;
                                     left: 50%;
                                     transform: translate(-50%, -50%);
-                                    padding: .9rem;
+                                    padding: .8rem;
                                 }
                             }  
                         } 
@@ -1078,8 +1084,8 @@ footer{
                         display: none;
                     }
                     .swiper-pagination{
-                        position: relative;
-                        bottom:0;
+                        position: absolute;
+                        bottom: 0;
                     }
                         
                 }

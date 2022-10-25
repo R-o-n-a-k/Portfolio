@@ -825,27 +825,30 @@ footer {
   body .hero .my-img img {
     height: 50vh;
     width: 50%;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -100%);
   }
   body .hero .detail {
     position: absolute;
-    bottom: 12rem;
+    bottom: 5rem;
   }
   body .hero .detail a {
     padding: 0.8rem;
   }
   body .hero .social-media {
-    bottom: 5%;
-    left: 35%;
+    bottom: 0;
+    left: 40%;
     transform: translate(10%, 1%);
   }
   body .hero .social-media i {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   body .about {
     height: auto;
+  }
+  body .about .about-heading {
+    padding: 3rem 0;
   }
   body .about .about-heading .about-title {
     font-size: 1.7rem;
@@ -879,6 +882,9 @@ footer {
   body .skills {
     height: auto;
   }
+  body .skills .skills-heading {
+    padding: 3rem 0;
+  }
   body .skills .skills-heading .skills-title {
     font-size: 1.7rem;
   }
@@ -887,8 +893,8 @@ footer {
   }
   body .skills .skills-content .containerSkill {
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.5rem;
-    padding: 3rem 4rem;
+    grid-gap: 1rem;
+    padding: 3rem 0.5rem;
   }
   body .skills .skills-content .containerSkill .skill-box {
     font-size: 0.8rem;
@@ -898,6 +904,9 @@ footer {
   }
   body .qualifications {
     height: auto;
+  }
+  body .qualifications .qualifications-heading {
+    padding: 3rem 2rem;
   }
   body .qualifications .qualifications-heading .qualifications-title {
     font-size: 1.7rem;
@@ -913,6 +922,9 @@ footer {
   }
   body .projects {
     height: auto;
+  }
+  body .projects .projects-heading {
+    padding: 3rem 0;
   }
   body .projects .projects-heading .projects-title {
     font-size: 1.7rem;
@@ -930,14 +942,14 @@ footer {
     padding: 1rem;
   }
   body .projects .project-content .mySwiper .project-box .mainProject {
-    height: 65vh;
+    height: 66vh;
     padding: 1rem;
     flex-direction: column;
   }
   body .projects .project-content .mySwiper .project-box img {
     margin: 1rem auto;
     height: 25vh;
-    width: 70%;
+    width: 90%;
   }
   body .projects .project-content .mySwiper .project-box .project-detail {
     font-size: 0.8rem;
@@ -948,21 +960,21 @@ footer {
     margin-top: 1.1rem;
   }
   body .projects .project-content .mySwiper .project-box .project-detail p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   body .projects .project-content .mySwiper .project-box .project-detail a {
-    bottom: 0;
+    bottom: -1rem;
     display: inline-block;
-    margin: 0.9rem auto;
+    margin: 1rem auto;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 0.9rem;
+    padding: 0.8rem;
   }
   body .projects .project-content .mySwiper .swipeBtn {
     display: none;
   }
   body .projects .project-content .mySwiper .swiper-pagination {
-    position: relative;
+    position: absolute;
     bottom: 0;
   }
 }
