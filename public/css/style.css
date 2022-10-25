@@ -822,30 +822,40 @@ footer {
   body {
     font-size: 0.8rem;
   }
+  body .hero {
+    height: 100vh;
+  }
   body .hero .my-img img {
-    height: 50vh;
+    height: 55vh;
     width: 50%;
-    top: 55%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -100%);
   }
   body .hero .detail {
     position: absolute;
-    bottom: 5rem;
+    bottom: 8rem;
+  }
+  body .hero .detail h1 {
+    font-size: 1.7rem;
+  }
+  body .hero .detail p span {
+    font-size: 1rem;
   }
   body .hero .detail a {
+    margin-top: 0;
     padding: 0.8rem;
   }
   body .hero .social-media {
-    bottom: 0;
+    bottom: 2.5rem;
     left: 40%;
     transform: translate(10%, 1%);
   }
   body .hero .social-media i {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   body .about {
-    height: auto;
+    height: 100vh;
   }
   body .about .about-heading {
     padding: 3rem 0;
@@ -863,27 +873,29 @@ footer {
     padding: 1rem;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    height: 70vh;
     width: 90%;
   }
   body .about .all-about-section .about-section-box .about-section-desc {
     margin: 0;
     padding: 1rem;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
     width: 100%;
   }
   body .about .all-about-section .about-section-box img {
     margin: 1.5rem 0;
-    height: 35vh;
+    height: 25vh;
     width: 50%;
   }
   body .skills {
-    height: auto;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   body .skills .skills-heading {
-    padding: 3rem 0;
+    padding: 3rem 0 0;
   }
   body .skills .skills-heading .skills-title {
     font-size: 1.7rem;
@@ -900,10 +912,10 @@ footer {
     font-size: 0.8rem;
   }
   body .skills .skills-content .containerSkill .skill-box .skill-Title img {
-    width: 50%;
+    width: 45%;
   }
   body .qualifications {
-    height: auto;
+    height: 100vh;
   }
   body .qualifications .qualifications-heading {
     padding: 3rem 2rem;
