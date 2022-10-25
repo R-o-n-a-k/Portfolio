@@ -904,7 +904,7 @@ footer{
 @include responsive(phone) {
 
     body{
-        font-size: .9rem;
+        font-size: .8rem;
         .hero {
                 .my-img {
                     img {
@@ -925,23 +925,24 @@ footer{
                 }
                 .social-media{
                     bottom: 5%;
-                    left: 50%;
+                    left: 45%;
                     transform: translate(10%, 1%);
                 }
             }
         
         .about {
+            height: auto;
                 .about-heading{
                     .about-title{
-                        font-size: 1.8rem;
+                        font-size: 1.7rem;
                     }
                     .about-subtitle{
-                        font-size: .9rem;
+                        font-size: .8rem;
                     }
                 }
 
                 .all-about-section{
-                    font-size: .9rem;
+                    font-size: .8rem;
                     .about-section-box {
                         padding: 1rem;
                         flex-direction: column;
@@ -967,22 +968,22 @@ footer{
         }
 
         .skills {
-            height:min-content;
+            height:auto;
             .skills-heading{
                     .skills-title{
-                        font-size: 1.8rem;
+                        font-size: 1.7rem;
                     }
                     .skills-subtitle{
-                        font-size: .9rem;
+                        font-size: .8rem;
                     }
             }
             .skills-content{
                     .containerSkill{
                         grid-template-columns: repeat(3, 1fr);
                         grid-gap: 1.5rem;
-                        padding: 1rem 2rem;
+                        padding: 3rem 4rem;
                         .skill-box{
-                            font-size:.9rem;
+                            font-size:.8rem;
                             .skill-Title{
                                 img{
                                     width:50%;
@@ -996,12 +997,13 @@ footer{
         }
 
         .qualifications{
+            height: auto;
             .qualifications-heading{
                     .qualifications-title{
-                        font-size: 1.8rem;
+                        font-size: 1.7rem;
                     }
                     .qualifications-subtitle{
-                        font-size: .9rem;
+                        font-size: .8rem;
                     }
             }
 
@@ -1013,18 +1015,19 @@ footer{
                     }
                 }
                 .timeline{
-                    font-size: .9rem;
+                    font-size: .8rem;
                 }
             }
         }
 
         .projects{
+            height: auto;
             .projects-heading{
                     .projects-title{
-                        font-size: 1.8rem;
+                        font-size: 1.7rem;
                     }
                     .project-subtitle{
-                        font-size: .9rem;
+                        font-size: .8rem;
                     }
             }
             .project-content{
@@ -1047,7 +1050,7 @@ footer{
                             }
                         
                             .project-detail {
-                                font-size: .9rem;
+                                font-size: .8rem;
                                 margin: 0rem;
                         
                                 h3 {
@@ -1071,7 +1074,10 @@ footer{
                     .swipeBtn{
                         display: none;
                     }
-                    
+                    .swiper-pagination{
+                        position: relative;
+                        bottom:0;
+                    }
                         
                 }
             }

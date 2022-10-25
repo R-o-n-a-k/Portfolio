@@ -820,7 +820,7 @@ footer {
 }
 @media only screen and (max-width: 600px) {
   body {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   body .hero .my-img img {
     height: 40vh;
@@ -838,17 +838,20 @@ footer {
   }
   body .hero .social-media {
     bottom: 5%;
-    left: 50%;
+    left: 45%;
     transform: translate(10%, 1%);
   }
+  body .about {
+    height: auto;
+  }
   body .about .about-heading .about-title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   body .about .about-heading .about-subtitle {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   body .about .all-about-section {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   body .about .all-about-section .about-section-box {
     padding: 1rem;
@@ -871,44 +874,48 @@ footer {
     width: 50%;
   }
   body .skills {
-    height: -webkit-min-content;
-    height: -moz-min-content;
-    height: min-content;
+    height: auto;
   }
   body .skills .skills-heading .skills-title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   body .skills .skills-heading .skills-subtitle {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   body .skills .skills-content .containerSkill {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.5rem;
-    padding: 1rem 2rem;
+    padding: 3rem 4rem;
   }
   body .skills .skills-content .containerSkill .skill-box {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   body .skills .skills-content .containerSkill .skill-box .skill-Title img {
     width: 50%;
   }
+  body .qualifications {
+    height: auto;
+  }
   body .qualifications .qualifications-heading .qualifications-title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   body .qualifications .qualifications-heading .qualifications-subtitle {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   body .qualifications .qualifications-CONTENT .qualification_tabs .qualification_button {
     font-size: 1.1rem;
   }
   body .qualifications .qualifications-CONTENT .timeline {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+  }
+  body .projects {
+    height: auto;
   }
   body .projects .projects-heading .projects-title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   body .projects .projects-heading .project-subtitle {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   body .projects .project-content {
     width: 100%;
@@ -930,7 +937,7 @@ footer {
     width: 70%;
   }
   body .projects .project-content .mySwiper .project-box .project-detail {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin: 0rem;
   }
   body .projects .project-content .mySwiper .project-box .project-detail h3 {
@@ -950,6 +957,10 @@ footer {
   }
   body .projects .project-content .mySwiper .swipeBtn {
     display: none;
+  }
+  body .projects .project-content .mySwiper .swiper-pagination {
+    position: relative;
+    bottom: 0;
   }
 }
 ::-webkit-scrollbar {
