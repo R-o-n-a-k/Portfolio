@@ -822,6 +822,12 @@ footer {
   body {
     font-size: 0.8rem;
   }
+  body #myBtn {
+    bottom: 3rem;
+    right: 4rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
   body .hero {
     height: 100vh;
   }
@@ -932,9 +938,6 @@ footer {
   body .qualifications .qualifications-CONTENT .timeline {
     font-size: 0.8rem;
   }
-  body .projects {
-    height: auto;
-  }
   body .projects .projects-heading {
     padding: 3rem 0;
   }
@@ -988,6 +991,59 @@ footer {
   body .projects .project-content .mySwiper .swiper-pagination {
     position: absolute;
     bottom: 0;
+  }
+  body .contact {
+    height: auto;
+  }
+  body .contact .contact-heading {
+    padding: 3rem 0;
+  }
+  body .contact .contact-heading .contact-title {
+    font-size: 1.7rem;
+  }
+  body .contact .contact-heading .contact-subtitle {
+    font-size: 0.8rem;
+  }
+  body .contact .contact-container .contact-content {
+    flex-direction: column;
+    margin: 0.1rem;
+  }
+  body .contact .contact-container .contact-content .contact-info {
+    margin: 0;
+  }
+  body .contact .contact-container .contact-content .contact-info .contactINFO lord-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+  body .contact .contact-container .contact-content .contact-info .contactINFO .contact-icon-detail {
+    margin: 1rem auto;
+  }
+  body .contact .contact-container .contact-content .contact-info .contactINFO .contact-icon-detail p {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+  body .contact .contact-container .contact-content .contact-info .contactINFO .contact-media {
+    left: 2.5rem;
+    bottom: -2rem;
+  }
+  body .contact .contact-container .contact-content .contact-info .contactINFO .contact-media i {
+    width: 2rem;
+    background: var(--color-secondary);
+    margin-right: 2rem;
+  }
+  body .contact .contact-container .contact-content .contact-form {
+    width: 100%;
+  }
+  body .contact .contact-container .contact-content .contact-form .contact-button button {
+    font-size: 0.9rem;
+    padding: 0.8rem 0.8rem;
+  }
+  body .contact .contact-container .contact-content .imageDIV {
+    display: none;
+  }
+  footer {
+    font-size: small;
+    margin-left: 30px;
   }
 }
 ::-webkit-scrollbar {
