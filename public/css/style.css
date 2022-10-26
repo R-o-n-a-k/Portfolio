@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -131,7 +132,7 @@ body {
 }
 .hero nav .burger {
   position: relative;
-  right: 7%;
+  left: -9%;
   display: none;
 }
 .hero nav .burger div {
@@ -837,8 +838,6 @@ footer {
     font-size: 0.8rem;
   }
   body #myBtn {
-    bottom: 3rem;
-    right: 4rem;
     padding: 0.5rem;
     font-size: 0.8rem;
   }

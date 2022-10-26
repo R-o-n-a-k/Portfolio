@@ -10,6 +10,7 @@
 @import 'mediaQueries';
 
 html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 * {
@@ -133,7 +134,7 @@ body {
         
         .burger{
             position: relative;
-            right: 7%;
+            left: -9%;
             display: none;
             div{
                 margin: 5px;
@@ -949,10 +950,10 @@ footer{
 
 @include responsive(phone) {
     body{
+        
         font-size: .8rem;
         #myBtn {
-                bottom: 3rem;
-                right:4rem;
+                
                 padding: .5rem;
                 font-size: .8rem;     
             }
