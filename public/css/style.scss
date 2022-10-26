@@ -148,10 +148,12 @@ body {
     }
     
 
-    .detail{
+    .hero-detail{
+        overflow: hidden;
         margin-left: 14%;
         margin-top: 10%;
         h1{ 
+            
             font-size: 3.2rem;
             color: var(--color-grey0);
             span{
@@ -216,13 +218,11 @@ body {
     }
     .my-img{
         img{
-            
-        width: 40%;
-        height: 60%;
-        
-        top: 12rem;
-        right: 8rem;
-        position:absolute;
+            width: 40%;
+            height: 60%;    
+            top: 12rem;
+            right: 8rem;
+            position:absolute;
         }
     }
     .social-media {
@@ -339,6 +339,7 @@ body {
     .skills-content{
         font-family: var(--body-font);
         .containerSkill{
+            
             display: grid;
             grid-template-columns: repeat(5,1fr);
             justify-content: center;
@@ -348,6 +349,7 @@ body {
             padding: 2rem 8rem;
             font-size: 1rem;
             .skill-box{
+                
                 padding: 1.5rem 1rem;
                 border: 2px solid var(--color-secondary);
                 box-shadow: var(--box-shadow-1);
@@ -594,7 +596,7 @@ body {
 
     .project-content{
         height: 70vh;
-        
+        overflow: hidden;
         .mySwiper{
             margin: .2rem 10rem;
             .project-box {
@@ -694,8 +696,10 @@ body {
             }   
         }
     
-    .contact-container{    
+    .contact-container{   
+        overflow: hidden;
         .contact-content{
+            
             display: flex;
             margin: 0 7rem;
             
@@ -746,6 +750,7 @@ body {
             }
 
             .contact-form{    
+                
                 width: 30%;
                 padding: 2rem 0;
                 .contact-detail{ 
@@ -963,8 +968,8 @@ footer{
                     img {
                         height: 55vh;
                         width: 50%;
-                        top: 60%;
-                        left: 50%;
+                        top: 95%;
+                        left: 70%;
                         transform: translate(-50%, -100%);
                     }
                 }
@@ -1009,6 +1014,7 @@ footer{
                 }
 
                 .all-about-section{
+                    
                     font-size: .8rem;
                     .about-section-box {
                         padding: 1rem;

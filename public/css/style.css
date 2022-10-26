@@ -141,26 +141,27 @@ body {
   height: 3px;
   background-color: var(--color-grey-1);
 }
-.hero .detail {
+.hero .hero-detail {
+  overflow: hidden;
   margin-left: 14%;
   margin-top: 10%;
 }
-.hero .detail h1 {
+.hero .hero-detail h1 {
   font-size: 3.2rem;
   color: var(--color-grey0);
 }
-.hero .detail h1 span {
+.hero .hero-detail h1 span {
   font-family: var(--stylish-font);
   color: var(--color-tertiary);
 }
-.hero .detail p {
+.hero .hero-detail p {
   font-family: var(--body-font);
   color: var(--color-quaternary);
 }
-.hero .detail p span {
+.hero .hero-detail p span {
   font-size: 1.5rem;
 }
-.hero .detail p .cursor {
+.hero .hero-detail p .cursor {
   display: inline-block;
   width: 0.1rem;
   background-color: var(--color-quaternary);
@@ -201,7 +202,7 @@ body {
     background-color: var(--color-quaternary);
   }
 }
-.hero .detail a {
+.hero .hero-detail a {
   background: var(--color-secondary);
   padding: 1rem;
   text-decoration: none;
@@ -212,7 +213,7 @@ body {
   border-radius: 0.3rem;
   transition: var(--animate);
 }
-.hero .detail a:hover {
+.hero .hero-detail a:hover {
   transform: scale(1.1);
   background: var(--color-tertiary);
 }
@@ -543,6 +544,7 @@ body {
 }
 .projects .project-content {
   height: 70vh;
+  overflow: hidden;
 }
 .projects .project-content .mySwiper {
   margin: 0.2rem 10rem;
@@ -634,6 +636,9 @@ body {
   font-family: var(--subtitle-font);
   color: var(--color-subtitle);
   font-size: 1rem;
+}
+.contact .contact-container {
+  overflow: hidden;
 }
 .contact .contact-container .contact-content {
   display: flex;
@@ -847,8 +852,8 @@ footer {
   body .hero .my-img img {
     height: 55vh;
     width: 50%;
-    top: 60%;
-    left: 50%;
+    top: 95%;
+    left: 70%;
     transform: translate(-50%, -100%);
   }
   body .hero .detail {
