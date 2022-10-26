@@ -332,6 +332,7 @@ body {
   font-family: var(--body-font);
 }
 .skills .skills-content .containerSkill {
+  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-content: center;
@@ -891,6 +892,7 @@ footer {
     font-size: 0.8rem;
   }
   body .about .all-about-section {
+    overflow: hidden;
     font-size: 0.8rem;
   }
   body .about .all-about-section .about-section-box {

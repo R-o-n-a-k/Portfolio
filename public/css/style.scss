@@ -339,7 +339,7 @@ body {
     .skills-content{
         font-family: var(--body-font);
         .containerSkill{
-            
+            overflow: hidden;
             display: grid;
             grid-template-columns: repeat(5,1fr);
             justify-content: center;
@@ -1014,7 +1014,7 @@ footer{
                 }
 
                 .all-about-section{
-                    
+                    overflow: hidden;
                     font-size: .8rem;
                     .about-section-box {
                         padding: 1rem;
@@ -1052,10 +1052,13 @@ footer{
                     }
             }
             .skills-content{
+                
                     .containerSkill{
+                        
                         grid-template-columns: repeat(3, 1fr);
                         grid-gap: 1rem;
                         padding: 3rem .5rem;
+                        
                         .skill-box{
                             font-size:.8rem;
                             .skill-Title{

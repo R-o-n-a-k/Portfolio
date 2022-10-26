@@ -41,7 +41,8 @@ gsap.timeline({
         pin:true
     }
 })
-.from(".skill-box",{x:innerWidth*-1,stagger:.1,ease:'ease'})
+// .from(".skill-box",{x:innerWidth*-1,stagger:.1,ease:'ease'})
+.from(".skill-box",{y:innerHeight*1,ease:'ease',stagger:.1})
 
 
 // =========project-animation===========
