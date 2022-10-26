@@ -10,7 +10,7 @@
 @import 'mediaQueries';
 
 html {
-    overflow-x: hidden;
+    
     scroll-behavior: smooth;
 }
 * {
@@ -55,7 +55,7 @@ html {
 }
 
 body {
-   
+    overflow-x: hidden;
     font-family:var(--main-font) ;
     letter-spacing: .1rem;
     background-color: var(--color-primary);
@@ -1232,11 +1232,11 @@ footer{
 
 ::-webkit-scrollbar{
     width: .5rem;
-    background-color: var(--color-grey-4);
+    background-color: var(--color-grey-5);
     border-radius: .3rem;
 }
 ::-webkit-scrollbar-thumb{
-    background-color:var(--color-grey-5) ;
+    background-color:var(--color-primary) ;
     border-radius: .3rem;
     &:hover{
         background-color: var(--color-black-1);
