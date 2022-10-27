@@ -99,6 +99,7 @@ body {
   height: 100vh;
 }
 .hero nav {
+  margin-top: 0.5rem;
   width: 100%;
   height: 10vh;
   display: flex;
@@ -111,7 +112,6 @@ body {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  cursor: pointer;
 }
 .hero nav ul {
   margin: 2rem 3rem;
@@ -649,14 +649,24 @@ body {
   margin-top: 1rem;
   letter-spacing: 0.1rem;
 }
-.contact .contact-container .contact-content .contact-info .contactINFO lord-icon {
-  width: 4rem;
-  height: 4rem;
-}
 .contact .contact-container .contact-content .contact-info .contactINFO .contact-icon-detail {
   display: flex;
   margin: 2rem;
   padding: 0.75rem 2rem 0.25rem;
+}
+.contact .contact-container .contact-content .contact-info .contactINFO .contact-icon-detail span {
+  margin: auto 0;
+  font-size: 1.2rem;
+  background: var(--color-secondary);
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: var(--animate);
+}
+.contact .contact-container .contact-content .contact-info .contactINFO .contact-icon-detail span:hover {
+  background-color: var(--color-tertiary);
 }
 .contact .contact-container .contact-content .contact-info .contactINFO .contact-icon-detail p {
   font-weight: 500;
@@ -672,18 +682,16 @@ body {
   bottom: -1.65rem;
 }
 .contact .contact-container .contact-content .contact-info .contactINFO .contact-media i {
-  color: var(--color-grey-0);
-  width: 2.1rem;
-  background: var(--color-secondary);
-  line-height: 2.1rem;
-  text-align: center;
+  border: 1px solid var(--color-secondary);
   border-radius: 0.3rem;
+  padding: 0.5rem;
+  color: var(--color-secondary);
+  font-size: 1.1rem;
   transition: var(--animate);
-  margin-right: 1rem;
+  margin-right: 2.5rem;
 }
 .contact .contact-container .contact-content .contact-info .contactINFO .contact-media i:hover {
-  transform: scale(1.1);
-  background-color: var(--color-tertiary);
+  color: var(--color-tertiary);
 }
 .contact .contact-container .contact-content .contact-form {
   width: 30%;
@@ -811,11 +819,14 @@ footer {
     height: 15rem;
     width: 24rem;
   }
-  body .contact .contact-container .contact-content .contact-form {
-    width: 100%;
+  body .contact .contact-container .contact-content {
+    margin: 0 1rem;
   }
-  body .contact .contact-container .contact-content .contact-form .imageDIV img {
-    right: 1rem;
+  body .contact .contact-container .contact-content .contact-form {
+    width: 50%;
+  }
+  body .contact .contact-container .contact-content .imageDIV img {
+    right: 0.5rem;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -825,10 +836,60 @@ footer {
   .hero nav ul li {
     margin: 1.5rem 1rem;
   }
+  .projects .project-content .mySwiper {
+    margin: 0.2rem 0.5rem;
+  }
+  .projects .project-content .mySwiper .project-box {
+    font-size: 0.8rem;
+  }
+  .projects .project-content .mySwiper .project-box img {
+    height: 15rem;
+    width: 24rem;
+  }
+  .projects .project-content .mySwiper .project-box .project-detail a {
+    bottom: 3rem;
+  }
+  .contact .contact-container .contact-content {
+    margin: 0 1rem;
+  }
+  .contact .contact-container .contact-content .contact-form {
+    width: 50%;
+  }
+  .contact .contact-container .contact-content .imageDIV img {
+    right: 0.1rem;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .hero nav ul li {
     margin: 1.5rem 0.5rem;
+  }
+  .about .all-about-section .about-section-box {
+    padding: 1rem;
+  }
+  .about .all-about-section .about-section-box .about-section-desc {
+    padding: 1rem;
+    height: 25rem;
+  }
+  .about .all-about-section .about-section-box img {
+    margin-right: 4rem;
+    border-radius: 0.3rem;
+    height: 25rem;
+    width: 35%;
+    box-shadow: 0.5rem 0.5rem var(--color-grey-4);
+    transition: var(--animate);
+  }
+  .about .all-about-section .about-section-box img:hover {
+    transform: translate(-5px);
+    box-shadow: 0.5rem 0.5rem var(--color-grey-5);
+  }
+  .contact .contact-container .contact-content {
+    margin: 0 1rem;
+  }
+  .contact .contact-container .contact-content .contact-form {
+    width: 50%;
+  }
+  .contact .contact-container .contact-content .imageDIV {
+    display: none;
   }
 }
 @media only screen and (max-width: 900px) {
