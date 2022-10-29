@@ -750,7 +750,6 @@ body {
                             transition: var(--animate);
                             margin-right: 2.5rem;
                             &:hover {
-                                // transform: scale(1.1);
                                 color: var(--color-tertiary);
                             }
                         }
@@ -1214,7 +1213,6 @@ footer{
       
 }
 
-
 @include responsive(phone) {
     body{
         
@@ -1458,13 +1456,8 @@ footer{
                             
                             .contact-media {
                                 left: 2.5rem;
-                                bottom: -2rem;    
-                                i {
-                                    width: 2rem;
-                                    background: var(--color-secondary);
-                                    margin-right: 2rem;
-                                }
-                    
+                                bottom: 0;    
+                
                             }
                         }
                     }

@@ -1249,12 +1249,7 @@ footer {
   }
   body .contact .contact-container .contact-content .contact-info .contactINFO .contact-media {
     left: 2.5rem;
-    bottom: -2rem;
-  }
-  body .contact .contact-container .contact-content .contact-info .contactINFO .contact-media i {
-    width: 2rem;
-    background: var(--color-secondary);
-    margin-right: 2rem;
+    bottom: 0;
   }
   body .contact .contact-container .contact-content .contact-form {
     width: 100%;
