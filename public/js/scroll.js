@@ -70,6 +70,6 @@ gsap.timeline({
     }
 })
 .from(".contact-info",{y:innerHeight*-1,ease:'ease'})
-.from(".contact-content form",{y:innerHeight*1,ease:'ease'})
-.from(".contact-content img",{y:innerHeight*-1,ease:'ease'})
+.from(".contact-content form",{y:innerHeight*1,ease:'ease'},'<')
+.from(".contact-content img",{y:innerHeight*-1,ease:'ease'},'<')
 

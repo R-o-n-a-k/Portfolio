@@ -1,4 +1,3 @@
-// @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
@@ -6,6 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+// poppins font
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+//roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 @import 'mediaQueries';
 
@@ -22,8 +27,8 @@ html {
 :root {
     --color-primary: #1b262c;
     --color-secondary: #0f4c75;
-    --color-tertiary:#3282b8;
-    --color-quaternary:#bbe1fa;
+    --color-tertiary: #3282b8;
+    --color-quaternary: #bbe1fa;
     --color-white: #FFFFFF;
     --color-black-0: #000;
     --color-black-1:#222831;
@@ -45,11 +50,9 @@ html {
     --animate:all .2s ease-in-out;
 
     // -------------fonts-------------------
-    --main-font:'Merienda One',cursive;
-    // --main-font:'Roboto',sans-serif;
+    --main-font:'Roboto',sans-serif;
     --stylish-font: 'Merienda One', cursive;
-    --subtitle-font: "Open Sans", sans-serif;
-    // --body-font:'Poppins',sans-serif;
+    --subtitle-font:'Poppins',sans-serif;
     --body-font:'Kalam', cursive;
     
 }
@@ -706,7 +709,6 @@ body {
                 letter-spacing: .1rem;
                 .contactINFO{
                     .contact-icon-detail {
-                        // margin: auto 2rem;
                         display: flex;
                         margin: 2rem;
                         padding: .75rem 2rem .25rem;
