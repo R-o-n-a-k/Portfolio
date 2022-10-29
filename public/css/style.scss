@@ -926,7 +926,7 @@ footer{
         
     }
     .projects {
-            .project-content {
+        .project-content {
                 .mySwiper {
                     
                     margin: .2rem .5rem; 
@@ -943,7 +943,7 @@ footer{
                         }
                     }
                 }
-            }
+        }
     }
     .contact {
         .contact-container {
@@ -974,7 +974,7 @@ footer{
             }
     
     
-        }
+    }
     .about {
 
         .all-about-section {
@@ -1001,8 +1001,34 @@ footer{
                 }
             }
         }
+    } 
+    .projects {
+        .project-content {
+            height: 80vh;
+            .mySwiper {
+                .project-box {
+                    .mainProject {
+                        padding: 1;
+                    }
+
+                    img {
+                        margin-left: 1rem;
+                        height: 8rem;
+                        width: 18rem;
+                    }
+
+                    .project-detail {
+                        font-size: 1rem;
+                        a {
+                            bottom: 7rem;
+                        }
+                    }
+                }
+            }
+
+        }
+
     }
-    
     .contact {
         .contact-container {
             .contact-content {
@@ -1034,8 +1060,158 @@ footer{
                     display: block;
                 }
             }
-        }
+    }
+    .about {
+        .about-heading {
+                padding: 3rem 0;
         
+                .about-title {
+                    font-size: 1.7rem;
+                }
+        
+                .about-subtitle {
+                    font-size: .8rem;
+                }
+            }
+        .all-about-section{
+            .about-section-box {
+                padding: 1.1rem;
+                flex-direction: column;
+                width: 85%;
+                .about-section-desc{
+                    margin: 0;
+                    padding: .5rem;
+                    height: min-content;
+                    width: 100%;
+                }
+                img{
+                    margin:1rem 0;
+                    height: 25vh;
+                    width: 30%;                            
+                }
+
+            }
+        }
+    }
+    .skills {
+            height:max-content;
+            .skills-heading{
+                padding: 3rem 0 0;
+                    .skills-title{
+                        font-size: 1.7rem;
+                    }
+                    .skills-subtitle{
+                        font-size: .8rem;
+                    }
+            }
+            .skills-content{
+                
+                    .containerSkill{
+                        
+                        grid-template-columns: repeat(4, 1fr);
+                        grid-gap: 1rem;
+                        padding: 3rem .5rem;
+                        
+                        .skill-box{
+                            font-size:.8rem;
+                            .skill-Title{
+                                img{
+                                    width:45%;
+                                }
+                            }
+                        }
+
+                    }
+
+            }
+    }
+
+    .qualifications{
+            .qualifications-heading{
+                padding: 3rem 2rem;
+                    .qualifications-title{
+                        font-size: 1.7rem;
+                    }
+                    .qualifications-subtitle{
+                        font-size: .8rem;
+                    }
+            }
+
+            .qualifications-CONTENT{     
+                .qualification_tabs {
+                    .qualification_button {
+                        font-size: 1.1rem;
+                        
+                    }
+                }
+                .timeline{
+                    font-size: .8rem;
+                }
+            }
+    }
+
+    .projects{
+        height: 100vh;
+            .projects-heading{
+                padding:  0;
+                    .projects-title{
+                        font-size: 1.7rem;
+                    }
+                    .project-subtitle{
+                        font-size: .8rem;
+                    }
+            }
+            .project-content{
+                height: max-content;
+                width: 100%;
+                .mySwiper {
+                    margin: 0;
+                    .project-box{
+                        padding: 2rem;
+                        .mainProject {
+                                height: 75vh;
+                                padding: 1rem;
+                                flex-direction: column;
+                            }
+                        
+                            img {
+                                margin:1rem auto ;
+                                height: 10vh;
+                                width: 60%;
+                            }
+                        
+                            .project-detail {
+                                font-size: 1rem;
+                                margin: 0rem;
+                        
+                                h3 {
+                                    font-size: 1rem;
+                                    margin-top: 1.1rem;
+                                }
+                                p {
+                                    font-size: .9rem;
+                                }
+                        
+                                a {
+                                    bottom:1rem;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    padding: .8rem;
+                                }
+                            }  
+                    } 
+                    .swipeBtn{
+                        display: none;
+                    }
+                    .swiper-pagination{
+                        position: absolute;
+                        bottom: 0;
+                    }
+                        
+                }
+            }
+    }
+      
 }
 
 
@@ -1235,7 +1411,7 @@ footer{
                                     padding: .8rem;
                                 }
                             }  
-                        } 
+                    } 
                     .swipeBtn{
                         display: none;
                     }

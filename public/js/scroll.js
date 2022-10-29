@@ -5,9 +5,9 @@
 // ===========hero animation===========
 const timeline1=gsap.timeline({defaults:{duration:1}})
 timeline1
-.from('.hero .ronakLogo',{y:'-100',ease:'bounce'})
-.from('.nav-links li',{y:'-205%',ease:'bounce',stagger:.2}, '<.1')
-.from('.my-img img',{duration:2,x:'120%',ease:'power3'},'<')
+.from('.hero .ronakLogo',{y:'-100%',ease:'bounce'},'<')
+.from('.nav-links li',{y:'-270%',ease:'bounce',stagger:.2}, '<.1')
+// .from('.my-img img',{duration:2,x:'120%',ease:'power3'},'<')
 .from('.social-media',{y:'200%',ease:'back',stagger:.1}, '<')
 .fromTo('.download-cv',{ opacity:-1,scale:0},{duration:.5,opacity:1,scale:1}, '<.1')
 .from('.hero-detail h1',{y:-100},'<')
@@ -20,14 +20,12 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.timeline({
     scrollTrigger:{
         trigger:".about",
-        start: 'top top',
-        end: 'bottom',
-        scrub:1,
-        pin:true
+        start: 'top 90%',
+        end: 'top 20%'
     }
 })
 .from(".about-section-box",{x:innerWidth*1,ease:'ease'})
-// .from(".about-section-box img",{x:innerWidth*1,ease:'ease'})
+
 
 
 // =========skills-animation===========
@@ -35,13 +33,10 @@ gsap.timeline({
 gsap.timeline({
     scrollTrigger:{
         trigger:".skills",
-        start: 'top top',
-        end: 'bottom',
-        scrub:1,
-        pin:true
+        start: 'top 90%',
+        end: 'top 20%'
     }
 })
-// .from(".skill-box",{x:innerWidth*-1,stagger:.1,ease:'ease'})
 .from(".skill-box",{y:innerHeight*1,ease:'ease',stagger:.1})
 
 
@@ -50,10 +45,8 @@ gsap.timeline({
 gsap.timeline({
     scrollTrigger:{
         trigger:".projects",
-        start: 'top top',
-        end: 'bottom',
-        scrub:1,
-        pin:true
+        start: 'top 90%',
+        end: 'top 20%'
     }
 })
 .from(".swiper",{y:innerHeight*-1,ease:'ease'})
@@ -63,10 +56,8 @@ gsap.timeline({
 gsap.timeline({
     scrollTrigger:{
         trigger:".contact",
-        start: 'top top',
-        end: 'bottom',
-        scrub:1,
-        pin:true
+        start: 'top 90%',
+        end: 'top 20%'
     }
 })
 .from(".contact-info",{y:innerHeight*-1,ease:'ease'})

@@ -884,6 +884,23 @@ footer {
     transform: translate(-5px);
     box-shadow: 0.5rem 0.5rem var(--color-grey-5);
   }
+  .projects .project-content {
+    height: 80vh;
+  }
+  .projects .project-content .mySwiper .project-box .mainProject {
+    padding: 1;
+  }
+  .projects .project-content .mySwiper .project-box img {
+    margin-left: 1rem;
+    height: 8rem;
+    width: 18rem;
+  }
+  .projects .project-content .mySwiper .project-box .project-detail {
+    font-size: 1rem;
+  }
+  .projects .project-content .mySwiper .project-box .project-detail a {
+    bottom: 7rem;
+  }
   .contact .contact-container .contact-content {
     margin: 0 1rem;
   }
@@ -900,6 +917,131 @@ footer {
   }
   .hero nav .burger {
     display: block;
+  }
+  .about .about-heading {
+    padding: 3rem 0;
+  }
+  .about .about-heading .about-title {
+    font-size: 1.7rem;
+  }
+  .about .about-heading .about-subtitle {
+    font-size: 0.8rem;
+  }
+  .about .all-about-section .about-section-box {
+    padding: 1.1rem;
+    flex-direction: column;
+    width: 85%;
+  }
+  .about .all-about-section .about-section-box .about-section-desc {
+    margin: 0;
+    padding: 0.5rem;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    width: 100%;
+  }
+  .about .all-about-section .about-section-box img {
+    margin: 1rem 0;
+    height: 25vh;
+    width: 30%;
+  }
+  .skills {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .skills .skills-heading {
+    padding: 3rem 0 0;
+  }
+  .skills .skills-heading .skills-title {
+    font-size: 1.7rem;
+  }
+  .skills .skills-heading .skills-subtitle {
+    font-size: 0.8rem;
+  }
+  .skills .skills-content .containerSkill {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    padding: 3rem 0.5rem;
+  }
+  .skills .skills-content .containerSkill .skill-box {
+    font-size: 0.8rem;
+  }
+  .skills .skills-content .containerSkill .skill-box .skill-Title img {
+    width: 45%;
+  }
+  .qualifications .qualifications-heading {
+    padding: 3rem 2rem;
+  }
+  .qualifications .qualifications-heading .qualifications-title {
+    font-size: 1.7rem;
+  }
+  .qualifications .qualifications-heading .qualifications-subtitle {
+    font-size: 0.8rem;
+  }
+  .qualifications .qualifications-CONTENT .qualification_tabs .qualification_button {
+    font-size: 1.1rem;
+  }
+  .qualifications .qualifications-CONTENT .timeline {
+    font-size: 0.8rem;
+  }
+  .projects {
+    height: 100vh;
+  }
+  .projects .projects-heading {
+    padding: 0;
+  }
+  .projects .projects-heading .projects-title {
+    font-size: 1.7rem;
+  }
+  .projects .projects-heading .project-subtitle {
+    font-size: 0.8rem;
+  }
+  .projects .project-content {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: 100%;
+  }
+  .projects .project-content .mySwiper {
+    margin: 0;
+  }
+  .projects .project-content .mySwiper .project-box {
+    padding: 2rem;
+  }
+  .projects .project-content .mySwiper .project-box .mainProject {
+    height: 75vh;
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .projects .project-content .mySwiper .project-box img {
+    margin: 1rem auto;
+    height: 10vh;
+    width: 60%;
+  }
+  .projects .project-content .mySwiper .project-box .project-detail {
+    font-size: 1rem;
+    margin: 0rem;
+  }
+  .projects .project-content .mySwiper .project-box .project-detail h3 {
+    font-size: 1rem;
+    margin-top: 1.1rem;
+  }
+  .projects .project-content .mySwiper .project-box .project-detail p {
+    font-size: 0.9rem;
+  }
+  .projects .project-content .mySwiper .project-box .project-detail a {
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.8rem;
+  }
+  .projects .project-content .mySwiper .swipeBtn {
+    display: none;
+  }
+  .projects .project-content .mySwiper .swiper-pagination {
+    position: absolute;
+    bottom: 0;
   }
 }
 @media only screen and (max-width: 767px) {
