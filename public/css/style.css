@@ -128,9 +128,9 @@ body {
 .hero nav ul li a:hover {
   color: var(--color-tertiary);
 }
-.hero nav .burger {
-  position: relative;
-  left: -9%;
+.hero nav .nav-toggle {
+  position: absolute;
+  right: 10%;
   display: none;
   border: none;
   background: transparent;
@@ -139,7 +139,7 @@ body {
   cursor: pointer;
   transition: var(--animate);
 }
-.hero nav .burger:hover {
+.hero nav .nav-toggle:hover {
   transform: scale(1.1);
   color: var(--color-tertiary);
 }
