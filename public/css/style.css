@@ -1259,9 +1259,7 @@ footer {
     padding: 0.8rem;
   }
   body .hero .social-media {
-    bottom: 2.5rem;
     left: 50%;
-    transform: translate(-50%);
   }
   body .hero .social-media i {
     font-size: 0.9rem;
