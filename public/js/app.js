@@ -1,3 +1,10 @@
+//////////navbar responsive
+function onMenuClick() {
+    var navbar = document.getElementById('navigation-bar');
+    var responsive_class_name = 'responsive';
+    navbar.classList.toggle(responsive_class_name);
+}
+
 (function () {
   "use strict";
   // define variables
@@ -138,8 +145,3 @@ window.addEventListener('load', function () {
 });
 
 
-function onMenuClick() {
-    var navbar = document.getElementById('navigation-bar');
-    var responsive_class_name = 'responsive'
-    navbar.classList.toggle(responsive_class_name)
-}
