@@ -1,9 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -25,8 +22,6 @@ html {
   --color-black-1:#222831;
   --color-title: #E7ECEF;
   --color-subtitle: #ADB5BD;
-  --color-blue-4:#0779e4;
-  --color-blue-1:#4bb3fd;
   --color-grey-0: #f8f8f8;
   --color-grey-1: #dbe1e8;
   --color-grey-2: #b2becd;
@@ -36,11 +31,13 @@ html {
   --light:#888888;
   --text:#363636;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
+  --lightShadow: 2px 5px 3px 0 rgba(0, 0, 0, 0.25);
+  --darkShadow: 4px 10px 6px 0 rgba(0, 0, 0, 0.5);
   --animate:all .2s ease-in-out;
   --main-font:"Roboto",sans-serif;
   --stylish-font: "Merienda One", cursive;
   --subtitle-font:"Poppins",sans-serif;
-  --body-font:"Kalam", cursive;
+  --body-font:"Mukta",sans-serif;
 }
 
 body {
@@ -144,6 +141,7 @@ body {
   background-color: var(--color-grey-1);
 }
 .hero .hero-detail {
+  font-family: var(--body-font);
   overflow: hidden;
   margin-left: 14%;
   margin-top: 10%;
@@ -153,7 +151,7 @@ body {
   color: var(--color-grey0);
 }
 .hero .hero-detail h1 span {
-  font-family: var(--stylish-font);
+  font-family: var(--main-font);
   color: var(--color-tertiary);
 }
 .hero .hero-detail p {
@@ -246,7 +244,6 @@ body {
 
 .about {
   height: 100vh;
-  background-color: var(--color-primary);
 }
 .about .about-heading {
   display: flex;
@@ -270,14 +267,12 @@ body {
   font-family: var(--body-font);
   font-weight: 500;
   font-size: 1.2rem;
-  color: var(--color-grey-0);
+  color: var(--color-grey-2);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .about .all-about-section .about-section-box {
-  border: 2px solid var(--color-secondary);
-  box-shadow: var(--box-shadow-1);
   border-radius: 0.3rem;
   display: flex;
   align-items: center;
@@ -287,25 +282,21 @@ body {
 }
 .about .all-about-section .about-section-box .about-section-desc {
   text-align: justify;
-  background-color: var(--color-tertiary);
+  border: solid 2px var(--color-secondary);
   padding: 2rem;
   height: 25rem;
   width: 70%;
   margin-left: 5rem;
   border-radius: 0.3rem;
-  box-shadow: 0.5rem 0.5rem var(--color-secondary);
+  box-shadow: 0.1rem 0.1rem 0.7rem var(--color-secondary);
 }
 .about .all-about-section .about-section-box img {
   margin-right: 5rem;
   border-radius: 0.3rem;
   height: 25rem;
   width: 30%;
-  box-shadow: 0.5rem 0.5rem var(--color-grey-4);
+  box-shadow: 0.1rem 0.1rem 0.7rem var(--color-grey-3);
   transition: var(--animate);
-}
-.about .all-about-section .about-section-box img:hover {
-  transform: translate(-5px);
-  box-shadow: 0.5rem 0.5rem var(--color-grey-5);
 }
 
 .skills {
@@ -877,12 +868,6 @@ footer {
     border-radius: 0.3rem;
     height: 25rem;
     width: 35%;
-    box-shadow: 0.5rem 0.5rem var(--color-grey-4);
-    transition: var(--animate);
-  }
-  .about .all-about-section .about-section-box img:hover {
-    transform: translate(-5px);
-    box-shadow: 0.5rem 0.5rem var(--color-grey-5);
   }
   .projects .project-content {
     height: 80vh;
@@ -1045,9 +1030,6 @@ footer {
   }
 }
 @media only screen and (max-width: 767px) {
-  body {
-    font-size: 0.8rem;
-  }
   body #myBtn {
     padding: 0.5rem;
     font-size: 0.8rem;
@@ -1056,30 +1038,33 @@ footer {
     height: 100vh;
   }
   body .hero .my-img img {
-    height: 55vh;
-    width: 50%;
-    top: 95%;
-    left: 70%;
+    height: 35vh;
+    width: 100%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -100%);
   }
-  body .hero .detail {
+  body .hero .hero-detail {
     position: absolute;
-    bottom: 8rem;
+    bottom: 7rem;
   }
-  body .hero .detail h1 {
+  body .hero .hero-detail h1 {
     font-size: 1.7rem;
   }
-  body .hero .detail p span {
-    font-size: 1rem;
+  body .hero .hero-detail h1 span {
+    font-size: 2.1rem;
   }
-  body .hero .detail a {
+  body .hero .hero-detail p span {
+    font-size: 1.1rem;
+  }
+  body .hero .hero-detail a {
     margin-top: 0;
     padding: 0.8rem;
   }
   body .hero .social-media {
     bottom: 2.5rem;
-    left: 40%;
-    transform: translate(10%, 1%);
+    left: 50%;
+    transform: translate(-50%);
   }
   body .hero .social-media i {
     font-size: 1.2rem;
@@ -1094,18 +1079,17 @@ footer {
     font-size: 1.7rem;
   }
   body .about .about-heading .about-subtitle {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   body .about .all-about-section {
-    overflow: hidden;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   body .about .all-about-section .about-section-box {
     padding: 1rem;
     flex-direction: column;
     align-items: center;
-    height: 70vh;
-    width: 90%;
+    height: 80vh;
+    width: 75%;
   }
   body .about .all-about-section .about-section-box .about-section-desc {
     margin: 0;
@@ -1117,8 +1101,8 @@ footer {
   }
   body .about .all-about-section .about-section-box img {
     margin: 1.5rem 0;
-    height: 25vh;
-    width: 50%;
+    height: 30vh;
+    width: 45%;
   }
   body .skills {
     height: -webkit-max-content;
@@ -1132,18 +1116,18 @@ footer {
     font-size: 1.7rem;
   }
   body .skills .skills-heading .skills-subtitle {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   body .skills .skills-content .containerSkill {
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-    padding: 3rem 0.5rem;
+    grid-gap: 3rem;
+    padding: 3rem 3rem;
   }
   body .skills .skills-content .containerSkill .skill-box {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   body .skills .skills-content .containerSkill .skill-box .skill-Title img {
-    width: 45%;
+    width: 30%;
   }
   body .qualifications {
     height: 100vh;
@@ -1155,13 +1139,13 @@ footer {
     font-size: 1.7rem;
   }
   body .qualifications .qualifications-heading .qualifications-subtitle {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   body .qualifications .qualifications-CONTENT .qualification_tabs .qualification_button {
     font-size: 1.1rem;
   }
   body .qualifications .qualifications-CONTENT .timeline {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   body .projects .projects-heading {
     padding: 3rem 0;
@@ -1170,29 +1154,27 @@ footer {
     font-size: 1.7rem;
   }
   body .projects .projects-heading .project-subtitle {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   body .projects .project-content {
     width: 100%;
-  }
-  body .projects .project-content .mySwiper {
-    margin: 0;
+    margin: 0 auto;
   }
   body .projects .project-content .mySwiper .project-box {
     padding: 1rem;
   }
   body .projects .project-content .mySwiper .project-box .mainProject {
-    height: 66vh;
+    height: 70vh;
     padding: 1rem;
     flex-direction: column;
   }
   body .projects .project-content .mySwiper .project-box img {
     margin: 1rem auto;
     height: 25vh;
-    width: 90%;
+    width: 70%;
   }
   body .projects .project-content .mySwiper .project-box .project-detail {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin: 0rem;
   }
   body .projects .project-content .mySwiper .project-box .project-detail h3 {
@@ -1200,25 +1182,16 @@ footer {
     margin-top: 1.1rem;
   }
   body .projects .project-content .mySwiper .project-box .project-detail p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   body .projects .project-content .mySwiper .project-box .project-detail a {
-    bottom: -1rem;
-    display: inline-block;
-    margin: 1rem auto;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0.8rem;
-  }
-  body .projects .project-content .mySwiper .swipeBtn {
-    display: none;
-  }
-  body .projects .project-content .mySwiper .swiper-pagination {
-    position: absolute;
-    bottom: 0;
+    bottom: 1rem;
+    margin: 0 auto;
   }
   body .contact {
-    height: auto;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   body .contact .contact-heading {
     padding: 3rem 0;
@@ -1227,14 +1200,11 @@ footer {
     font-size: 1.7rem;
   }
   body .contact .contact-heading .contact-subtitle {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   body .contact .contact-container .contact-content {
     flex-direction: column;
     margin: 0.1rem;
-  }
-  body .contact .contact-container .contact-content .contact-info {
-    margin: 0;
   }
   body .contact .contact-container .contact-content .contact-info .contactINFO lord-icon {
     width: 3rem;
@@ -1252,14 +1222,210 @@ footer {
     bottom: 0;
   }
   body .contact .contact-container .contact-content .contact-form {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
   }
   body .contact .contact-container .contact-content .contact-form .contact-button button {
+    left: 50%;
+    transform: translate(-50%);
     font-size: 0.9rem;
-    padding: 0.8rem 0.8rem;
   }
-  body .contact .contact-container .contact-content .imageDIV {
-    display: none;
+  footer {
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body .hero {
+    height: 100vh;
+  }
+  body .hero .my-img img {
+    height: 30vh;
+  }
+  body .hero .hero-detail {
+    position: absolute;
+    bottom: 7rem;
+  }
+  body .hero .hero-detail h1 {
+    font-size: 1.7rem;
+  }
+  body .hero .hero-detail h1 span {
+    font-size: 2.1rem;
+  }
+  body .hero .hero-detail p span {
+    font-size: 1.1rem;
+  }
+  body .hero .hero-detail a {
+    margin-top: 0;
+    padding: 0.8rem;
+  }
+  body .hero .social-media {
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  body .hero .social-media i {
+    font-size: 1rem;
+  }
+  body .about {
+    height: 100vh;
+  }
+  body .about .about-heading {
+    padding: 3rem 0;
+  }
+  body .about .about-heading .about-title {
+    font-size: 1.7rem;
+  }
+  body .about .about-heading .about-subtitle {
+    font-size: 0.9rem;
+  }
+  body .about .all-about-section {
+    font-size: 0.9rem;
+  }
+  body .about .all-about-section .about-section-box {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    width: 75%;
+  }
+  body .about .all-about-section .about-section-box .about-section-desc {
+    margin: 0;
+    padding: 1rem;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    width: 100%;
+  }
+  body .about .all-about-section .about-section-box img {
+    margin: 1.5rem 0;
+    height: 30vh;
+    width: 45%;
+  }
+  body .skills {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  body .skills .skills-heading {
+    padding: 3rem 0 0;
+  }
+  body .skills .skills-heading .skills-title {
+    font-size: 1.7rem;
+  }
+  body .skills .skills-heading .skills-subtitle {
+    font-size: 0.9rem;
+  }
+  body .skills .skills-content .containerSkill {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    padding: 3rem 3rem;
+  }
+  body .skills .skills-content .containerSkill .skill-box {
+    font-size: 0.9rem;
+  }
+  body .skills .skills-content .containerSkill .skill-box .skill-Title img {
+    width: 30%;
+  }
+  body .qualifications {
+    height: 100vh;
+  }
+  body .qualifications .qualifications-heading {
+    padding: 3rem 2rem;
+  }
+  body .qualifications .qualifications-heading .qualifications-title {
+    font-size: 1.7rem;
+  }
+  body .qualifications .qualifications-heading .qualifications-subtitle {
+    font-size: 0.9rem;
+  }
+  body .qualifications .qualifications-CONTENT .qualification_tabs .qualification_button {
+    font-size: 1.1rem;
+  }
+  body .qualifications .qualifications-CONTENT .timeline {
+    font-size: 0.9rem;
+  }
+  body .projects .projects-heading {
+    padding: 3rem 0;
+  }
+  body .projects .projects-heading .projects-title {
+    font-size: 1.7rem;
+  }
+  body .projects .projects-heading .project-subtitle {
+    font-size: 0.9rem;
+  }
+  body .projects .project-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+  body .projects .project-content .mySwiper .project-box {
+    padding: 1rem;
+  }
+  body .projects .project-content .mySwiper .project-box .mainProject {
+    height: 70vh;
+    padding: 1rem;
+    flex-direction: column;
+  }
+  body .projects .project-content .mySwiper .project-box img {
+    margin: 1rem auto;
+    height: 25vh;
+    width: 70%;
+  }
+  body .projects .project-content .mySwiper .project-box .project-detail {
+    font-size: 0.9rem;
+    margin: 0rem;
+  }
+  body .projects .project-content .mySwiper .project-box .project-detail h3 {
+    font-size: 1rem;
+    margin-top: 1.1rem;
+  }
+  body .projects .project-content .mySwiper .project-box .project-detail p {
+    font-size: 0.9rem;
+  }
+  body .projects .project-content .mySwiper .project-box .project-detail a {
+    bottom: 1rem;
+    margin: 0 auto;
+  }
+  body .contact {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  body .contact .contact-heading {
+    padding: 3rem 0;
+  }
+  body .contact .contact-heading .contact-title {
+    font-size: 1.7rem;
+  }
+  body .contact .contact-heading .contact-subtitle {
+    font-size: 0.9rem;
+  }
+  body .contact .contact-container .contact-content {
+    flex-direction: column;
+    margin: 0.1rem;
+  }
+  body .contact .contact-container .contact-content .contact-info .contactINFO lord-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+  body .contact .contact-container .contact-content .contact-info .contactINFO .contact-icon-detail {
+    margin: 1rem auto;
+  }
+  body .contact .contact-container .contact-content .contact-info .contactINFO .contact-icon-detail p {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+  body .contact .contact-container .contact-content .contact-info .contactINFO .contact-media {
+    left: 2.5rem;
+    bottom: 0;
+  }
+  body .contact .contact-container .contact-content .contact-form {
+    width: 80%;
+    margin: 0 auto;
+  }
+  body .contact .contact-container .contact-content .contact-form .contact-button button {
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 0.9rem;
   }
   footer {
     font-size: 0.5rem;

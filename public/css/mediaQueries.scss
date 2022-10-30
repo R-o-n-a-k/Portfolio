@@ -1,4 +1,9 @@
 @mixin responsive($breakpoint){
+    @if $breakpoint ==smallphone {
+            @media only screen and (max-width:600px) {
+                @content
+            }
+    }
     @if $breakpoint == phone{
         @media only screen and (max-width:767px) {
             @content

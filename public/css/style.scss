@@ -1,21 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-
+// google fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
-
-// poppins font
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-//roboto
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 @import 'mediaQueries';
 
-html {
-    
+html { 
     scroll-behavior: smooth;
 }
 * {
@@ -25,6 +15,7 @@ html {
     list-style: none;
 }
 :root {
+    // -----------colors------------
     --color-primary: #1b262c;
     --color-secondary: #0f4c75;
     --color-tertiary: #3282b8;
@@ -34,26 +25,28 @@ html {
     --color-black-1:#222831;
     --color-title: #E7ECEF;
     --color-subtitle: #ADB5BD;
-    --color-blue-4:#0779e4;
-    --color-blue-1:#4bb3fd;
+    // --color-blue-4:#0779e4;
+    // --color-blue-1:#4bb3fd;
     --color-grey-0: #f8f8f8;
     --color-grey-1: #dbe1e8;
     --color-grey-2: #b2becd;
     --color-grey-3: #6c7983;
     --color-grey-4: #454e56;
     --color-grey-5: #2a2e35;
-
     --light:#888888;
     --text:#363636;
     
+    //--------Shadow-----------------
     --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
+    --lightShadow: 2px 5px 3px 0 rgba(0, 0, 0, 0.25);
+    --darkShadow: 4px 10px 6px 0 rgba(0, 0, 0, 0.5);
     --animate:all .2s ease-in-out;
 
     // -------------fonts-------------------
     --main-font:'Roboto',sans-serif;
     --stylish-font: 'Merienda One', cursive;
     --subtitle-font:'Poppins',sans-serif;
-    --body-font:'Kalam', cursive;
+    --body-font:'Mukta',sans-serif;
     
 }
 
@@ -152,15 +145,15 @@ body {
     
 
     .hero-detail{
+        font-family: var(--body-font);
         overflow: hidden;
         margin-left: 14%;
         margin-top: 10%;
         h1{ 
-            
             font-size: 3.2rem;
             color: var(--color-grey0);
             span{
-                font-family: var(--stylish-font);
+                font-family: var(--main-font);
                 color:var(--color-tertiary);
             }
         }
@@ -248,9 +241,7 @@ body {
 }
 
 .about{
-    height: 100vh;
-    background-color: var(--color-primary);
-    
+    height: 100vh;  
     .about-heading{
         display: flex;
         justify-content: center;
@@ -275,14 +266,12 @@ body {
         font-family: var(--body-font);
         font-weight:500; 
         font-size: 1.2rem;
-        color: var(--color-grey-0);
+        color: var(--color-grey-2);
         display: flex;
         align-items: center;
         justify-content: center;
        
         .about-section-box{
-            border: 2px solid var(--color-secondary);
-            box-shadow: var(--box-shadow-1);
             border-radius: .3rem;
             display: flex;
             align-items: center;
@@ -291,26 +280,22 @@ body {
             padding:2rem;
             .about-section-desc{
                 text-align: justify;
-                background-color: var(--color-tertiary);
+                border:solid 2px var(--color-secondary); 
                 padding: 2rem;
                 height: 25rem;
                 width: 70%;
                 margin-left: 5rem;
                 border-radius: .3rem;
-                box-shadow: .5rem .5rem var(--color-secondary);
-                
+                box-shadow: .1rem .1rem .7rem var(--color-secondary);
             }
             img {
                 margin-right: 5rem;
                 border-radius: .3rem;
                 height: 25rem;
                 width: 30%;
-                box-shadow: .5rem .5rem var(--color-grey-4);
+                box-shadow: .1rem .1rem .7rem var(--color-grey-3);
                 transition: var(--animate);
-                &:hover {
-                        transform: translate(-5px);
-                        box-shadow: .5rem .5rem var(--color-grey-5);
-                    }
+                
             }
         }
     }
@@ -870,14 +855,14 @@ footer{
 // ------------------media-queries----------
 @include responsive(medium-desktop) {
     body {
-            .about {
+        .about {
                 .all-about-section {      
                     .about-section-box {
                         width: 80%;
                     }
                 }      
-            }
-            .projects {
+        }
+        .projects {
                 .project-content {
 
                     .mySwiper {
@@ -890,9 +875,8 @@ footer{
                         }
                     }
                 }
-            }
-            
-            .contact {            
+        }
+        .contact {            
                 .contact-container {
                     .contact-content {
                         margin: 0 1rem;
@@ -906,7 +890,7 @@ footer{
                         }
                     }
                 }
-            }    
+        }    
     }
 }
 
@@ -959,7 +943,7 @@ footer{
                 }
             }
     }
-    }
+}
 
 @include responsive(tab-land) {
     .hero {
@@ -975,9 +959,7 @@ footer{
     
     }
     .about {
-
         .all-about-section {
-
             .about-section-box {
                 padding: 1rem;
                 .about-section-desc {
@@ -990,13 +972,7 @@ footer{
                     border-radius: .3rem;
                     height: 25rem;
                     width: 35%;
-                    box-shadow: .5rem .5rem var(--color-grey-4);
-                    transition: var(--animate);
-
-                    &:hover {
-                        transform: translate(-5px);
-                        box-shadow: .5rem .5rem var(--color-grey-5);
-                    }
+                    
                 }
             }
         }
@@ -1215,10 +1191,7 @@ footer{
 
 @include responsive(phone) {
     body{
-        
-        font-size: .8rem;
-        #myBtn {
-                
+        #myBtn { 
                 padding: .5rem;
                 font-size: .8rem;     
             }
@@ -1226,23 +1199,26 @@ footer{
             height: 100vh;
                 .my-img {
                     img {
-                        height: 55vh;
-                        width: 50%;
-                        top: 95%;
-                        left: 70%;
+                        height: 35vh;
+                        width: 100%;
+                        top: 50%;
+                        left: 50%;
                         transform: translate(-50%, -100%);
                     }
                 }
         
-                .detail {
+                .hero-detail {
                     position: absolute;
-                    bottom: 8rem;
+                    bottom: 7rem;
                     h1{
                         font-size: 1.7rem;
+                        span{
+                            font-size: 2.1rem;
+                        }
                     }
                     p{
                         span{
-                            font-size: 1rem;
+                            font-size: 1.1rem;
                         }
                     }
                     
@@ -1253,8 +1229,8 @@ footer{
                 }
                 .social-media{
                     bottom: 2.5rem;
-                    left: 40%;
-                    transform: translate(10%, 1%);
+                    left: 50%;
+                    transform: translate(-50%);
                     i{
                         font-size:1.2rem;
                     }
@@ -1269,19 +1245,18 @@ footer{
                         font-size: 1.7rem;
                     }
                     .about-subtitle{
-                        font-size: .8rem;
+                        font-size: .9rem;
                     }
                 }
 
                 .all-about-section{
-                    overflow: hidden;
-                    font-size: .8rem;
+                    font-size: .9rem;
                     .about-section-box {
                         padding: 1rem;
                         flex-direction: column;
                         align-items: center;
-                        height: 70vh;
-                        width: 90%;
+                        height: 80vh;
+                        width: 75%;
                         .about-section-desc{
                             margin: 0;
                             padding: 1rem;
@@ -1290,8 +1265,8 @@ footer{
                         }
                         img{
                             margin:1.5rem 0;
-                            height: 25vh;
-                            width: 50%;                            
+                            height: 30vh;
+                            width: 45%;                            
                         }
 
                     }
@@ -1308,27 +1283,27 @@ footer{
                         font-size: 1.7rem;
                     }
                     .skills-subtitle{
-                        font-size: .8rem;
+                        font-size: .9rem;
                     }
             }
             .skills-content{
-                
-                    .containerSkill{
-                        
+                .containerSkill {
                         grid-template-columns: repeat(3, 1fr);
-                        grid-gap: 1rem;
-                        padding: 3rem .5rem;
-                        
-                        .skill-box{
-                            font-size:.8rem;
-                            .skill-Title{
-                                img{
-                                    width:45%;
+                        grid-gap: 3rem;
+                        padding: 3rem 3rem;
+                
+                        .skill-box {
+                            font-size: .9rem;
+                
+                            .skill-Title {
+                                img {
+                                    width: 30%;
                                 }
                             }
                         }
-
+                
                     }
+                    
 
             }
         }
@@ -1341,7 +1316,7 @@ footer{
                         font-size: 1.7rem;
                     }
                     .qualifications-subtitle{
-                        font-size: .8rem;
+                        font-size: .9rem;
                     }
             }
 
@@ -1353,7 +1328,7 @@ footer{
                     }
                 }
                 .timeline{
-                    font-size: .8rem;
+                    font-size: .9rem;
                 }
             }
         }
@@ -1365,19 +1340,18 @@ footer{
                         font-size: 1.7rem;
                     }
                     .project-subtitle{
-                        font-size: .8rem;
+                        font-size: .9rem;
                     }
             }
             .project-content{
                 width: 100%;
+                margin: 0 auto;
                 .mySwiper {
-                    margin: 0;
-
                     .project-box{
                         padding: 1rem;
                         
                         .mainProject {
-                                height: 66vh;
+                                height: 70vh;
                                 padding: 1rem;
                                 flex-direction: column;
                             }
@@ -1385,11 +1359,11 @@ footer{
                             img {
                                 margin:1rem auto ;
                                 height: 25vh;
-                                width: 90%;
+                                width: 70%;
                             }
                         
                             .project-detail {
-                                font-size: .8rem;
+                                font-size: .9rem;
                                 margin: 0rem;
                         
                                 h3 {
@@ -1397,40 +1371,28 @@ footer{
                                     margin-top: 1.1rem;
                                 }
                                 p {
-                                    font-size: .8rem;
+                                    font-size: .9rem;
                                 }
                         
                                 a {
-                                    bottom:-1rem;
-                                    display: inline-block;
-                                    margin: 1rem auto;
-                                    left: 50%;
-                                    transform: translate(-50%, -50%);
-                                    padding: .8rem;
+                                    bottom:1rem;
+                                    margin: 0 auto;
                                 }
                             }  
-                    } 
-                    .swipeBtn{
-                        display: none;
-                    }
-                    .swiper-pagination{
-                        position: absolute;
-                        bottom: 0;
-                    }
-                        
+                    }    
                 }
             }
         }
 
         .contact{
-            height:  auto;
+            height:max-content;
             .contact-heading {
                     padding: 3rem 0;
                     .contact-title {
                         font-size: 1.7rem;
                     }
                     .contact-subtitle {
-                        font-size: .8rem;
+                        font-size: .9rem;
                     }
                 }
 
@@ -1440,12 +1402,11 @@ footer{
                     margin: 0.1rem;
                     
                     .contact-info{
-                        margin:0;
                         .contactINFO{
                             lord-icon {
-                                    width: 3rem;
-                                    height: 3rem;
-                                }
+                                width: 3rem;
+                                height: 3rem;
+                            }
                             .contact-icon-detail {
                                 margin: 1rem auto;
                                 p{
@@ -1463,18 +1424,15 @@ footer{
                     }
 
                     .contact-form{    
-                        width: 100%;
-                        
+                        width: 80%;
+                        margin: 0 auto;
                         .contact-button{      
                             button{
+                                left: 50%;
+                                transform: translate(-50%);
                                 font-size: .9rem;
-                                padding: .8rem .8rem;
                             }
                         }
-                    }
-
-                    .imageDIV{
-                        display: none;
                     }
                 }
             }
@@ -1486,6 +1444,290 @@ footer{
         // margin-left: 30px;
     }
     
+}
+
+@include responsive(smallphone) {
+body {
+        .hero {
+            height: 100vh;
+
+            .my-img {
+                img {
+                    height: 30vh;
+                    // width: 100%;
+                    // top: 50%;
+                    // left: 50%;
+                    // transform: translate(-50%, -100%);
+                }
+            }
+
+            .hero-detail {
+                position: absolute;
+                bottom: 7rem;
+
+                h1 {
+                    font-size: 1.7rem;
+
+                    span {
+                        font-size: 2.1rem;
+                    }
+                }
+
+                p {
+                    span {
+                        font-size: 1.1rem;
+                    }
+                }
+
+                a {
+                    margin-top: 0;
+                    padding: .8rem;
+                }
+            }
+
+            .social-media {
+                bottom: 2.5rem;
+                left: 50%;
+                transform: translate(-50%);
+
+                i {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .about {
+            height: 100vh;
+
+            .about-heading {
+                padding: 3rem 0;
+
+                .about-title {
+                    font-size: 1.7rem;
+                }
+
+                .about-subtitle {
+                    font-size: .9rem;
+                }
+            }
+
+            .all-about-section {
+                font-size: .9rem;
+
+                .about-section-box {
+                    padding: 1rem;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 80vh;
+                    width: 75%;
+
+                    .about-section-desc {
+                        margin: 0;
+                        padding: 1rem;
+                        height: min-content;
+                        width: 100%;
+                    }
+
+                    img {
+                        margin: 1.5rem 0;
+                        height: 30vh;
+                        width: 45%;
+                    }
+
+                }
+
+
+            }
+        }
+
+        .skills {
+            height: max-content;
+
+            .skills-heading {
+                padding: 3rem 0 0;
+
+                .skills-title {
+                    font-size: 1.7rem;
+                }
+
+                .skills-subtitle {
+                    font-size: .9rem;
+                }
+            }
+
+            .skills-content {
+                .containerSkill {
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-gap: 3rem;
+                    padding: 3rem 3rem;
+
+                    .skill-box {
+                        font-size: .9rem;
+
+                        .skill-Title {
+                            img {
+                                width: 30%;
+                            }
+                        }
+                    }
+
+                }
+
+
+            }
+        }
+
+        .qualifications {
+            height: 100vh;
+
+            .qualifications-heading {
+                padding: 3rem 2rem;
+
+                .qualifications-title {
+                    font-size: 1.7rem;
+                }
+
+                .qualifications-subtitle {
+                    font-size: .9rem;
+                }
+            }
+
+            .qualifications-CONTENT {
+                .qualification_tabs {
+                    .qualification_button {
+                        font-size: 1.1rem;
+
+                    }
+                }
+
+                .timeline {
+                    font-size: .9rem;
+                }
+            }
+        }
+
+        .projects {
+            .projects-heading {
+                padding: 3rem 0;
+
+                .projects-title {
+                    font-size: 1.7rem;
+                }
+
+                .project-subtitle {
+                    font-size: .9rem;
+                }
+            }
+
+            .project-content {
+                width: 100%;
+                margin: 0 auto;
+
+                .mySwiper {
+                    .project-box {
+                        padding: 1rem;
+
+                        .mainProject {
+                            height: 70vh;
+                            padding: 1rem;
+                            flex-direction: column;
+                        }
+
+                        img {
+                            margin: 1rem auto;
+                            height: 25vh;
+                            width: 70%;
+                        }
+
+                        .project-detail {
+                            font-size: .9rem;
+                            margin: 0rem;
+
+                            h3 {
+                                font-size: 1rem;
+                                margin-top: 1.1rem;
+                            }
+
+                            p {
+                                font-size: .9rem;
+                            }
+
+                            a {
+                                bottom: 1rem;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact {
+            height: max-content;
+
+            .contact-heading {
+                padding: 3rem 0;
+
+                .contact-title {
+                    font-size: 1.7rem;
+                }
+
+                .contact-subtitle {
+                    font-size: .9rem;
+                }
+            }
+
+            .contact-container {
+                .contact-content {
+                    flex-direction: column;
+                    margin: 0.1rem;
+
+                    .contact-info {
+                        .contactINFO {
+                            lord-icon {
+                                width: 3rem;
+                                height: 3rem;
+                            }
+
+                            .contact-icon-detail {
+                                margin: 1rem auto;
+
+                                p {
+                                    font-size: .9rem;
+                                    padding: 1rem;
+                                }
+                            }
+
+                            .contact-media {
+                                left: 2.5rem;
+                                bottom: 0;
+
+                            }
+                        }
+                    }
+
+                    .contact-form {
+                        width: 80%;
+                        margin: 0 auto;
+
+                        .contact-button {
+                            button {
+                                left: 50%;
+                                transform: translate(-50%);
+                                font-size: .9rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    footer {
+        font-size: .5rem;
+        // margin-left: 30px;
+    }
+
 }
 
 
