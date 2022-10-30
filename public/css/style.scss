@@ -1487,10 +1487,14 @@ body {
 
             .social-media {
                 left: 50%;
-                // transform: translate(-50%);
-                i {
-                    font-size: .9rem;
+                a{
+                    padding: 0 1rem;
+                    
+                    i {
+                            font-size: .9rem;
+                    }
                 }
+                
             }
         }
 

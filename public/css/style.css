@@ -1261,7 +1261,10 @@ footer {
   body .hero .social-media {
     left: 50%;
   }
-  body .hero .social-media i {
+  body .hero .social-media a {
+    padding: 0 1rem;
+  }
+  body .hero .social-media a i {
     font-size: 0.9rem;
   }
   body .about {
