@@ -1037,6 +1037,9 @@ footer {
   body .hero {
     height: 100vh;
   }
+  body .hero nav img {
+    margin-left: 2rem;
+  }
   body .hero .my-img img {
     height: 35vh;
     width: 100%;
@@ -1240,6 +1243,9 @@ footer {
 @media only screen and (max-width: 600px) {
   body .hero {
     height: 100vh;
+  }
+  body .hero nav img {
+    margin-left: 2rem;
   }
   body .hero .my-img img {
     height: 30vh;

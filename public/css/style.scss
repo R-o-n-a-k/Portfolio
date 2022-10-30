@@ -1197,6 +1197,11 @@ footer{
             }
         .hero {
             height: 100vh;
+                nav {
+                        img {
+                            margin-left: 2rem;
+                        }
+                    }
                 .my-img {
                     img {
                         height: 35vh;
@@ -1451,7 +1456,11 @@ footer{
 body {
         .hero {
             height: 100vh;
-
+            nav {
+                img {
+                    margin-left: 2rem;
+                }
+            }
             .my-img {
                 img {
                     height: 30vh;
