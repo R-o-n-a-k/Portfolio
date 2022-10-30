@@ -1347,9 +1347,10 @@ footer{
                 width: 100%;
                 margin: 0 auto;
                 .mySwiper {
+                    margin:0;
                     .project-box{
                         padding: 1rem;
-                        
+                    
                         .mainProject {
                                 height: 70vh;
                                 padding: 1rem;
@@ -1454,10 +1455,6 @@ body {
             .my-img {
                 img {
                     height: 30vh;
-                    // width: 100%;
-                    // top: 50%;
-                    // left: 50%;
-                    // transform: translate(-50%, -100%);
                 }
             }
 
@@ -1500,16 +1497,9 @@ body {
 
         .about {
             height: 100vh;
-
             .about-heading {
-                padding: 3rem 0;
-
-                .about-title {
-                    font-size: 1.7rem;
-                }
-
                 .about-subtitle {
-                    font-size: .9rem;
+                    font-size: .8rem;
                 }
             }
 
@@ -1521,7 +1511,7 @@ body {
                     flex-direction: column;
                     align-items: center;
                     height: 80vh;
-                    width: 75%;
+                    width: 90%;
 
                     .about-section-desc {
                         margin: 0;
@@ -1533,7 +1523,7 @@ body {
                     img {
                         margin: 1.5rem 0;
                         height: 30vh;
-                        width: 45%;
+                        width: 50%;
                     }
 
                 }
@@ -1544,31 +1534,24 @@ body {
 
         .skills {
             height: max-content;
-
             .skills-heading {
-                padding: 3rem 0 0;
-
-                .skills-title {
-                    font-size: 1.7rem;
-                }
-
                 .skills-subtitle {
-                    font-size: .9rem;
+                    font-size: .8rem;
                 }
             }
 
             .skills-content {
                 .containerSkill {
                     grid-template-columns: repeat(3, 1fr);
-                    grid-gap: 3rem;
-                    padding: 3rem 3rem;
+                    grid-gap: 1rem;
+                    padding: 3rem .5rem;
 
                     .skill-box {
-                        font-size: .9rem;
+                        font-size: .8rem;
 
                         .skill-Title {
                             img {
-                                width: 30%;
+                                width: 50%;
                             }
                         }
                     }
@@ -1583,14 +1566,8 @@ body {
             height: 100vh;
 
             .qualifications-heading {
-                padding: 3rem 2rem;
-
-                .qualifications-title {
-                    font-size: 1.7rem;
-                }
-
                 .qualifications-subtitle {
-                    font-size: .9rem;
+                    font-size: .8rem;
                 }
             }
 
@@ -1610,54 +1587,19 @@ body {
 
         .projects {
             .projects-heading {
-                padding: 3rem 0;
-
-                .projects-title {
-                    font-size: 1.7rem;
-                }
-
                 .project-subtitle {
-                    font-size: .9rem;
+                    font-size: .8rem;
                 }
             }
 
             .project-content {
                 width: 100%;
-                margin: 0 auto;
-
                 .mySwiper {
                     .project-box {
-                        padding: 1rem;
-
-                        .mainProject {
-                            height: 70vh;
-                            padding: 1rem;
-                            flex-direction: column;
-                        }
 
                         img {
-                            margin: 1rem auto;
-                            height: 25vh;
-                            width: 70%;
-                        }
-
-                        .project-detail {
-                            font-size: .9rem;
-                            margin: 0rem;
-
-                            h3 {
-                                font-size: 1rem;
-                                margin-top: 1.1rem;
-                            }
-
-                            p {
-                                font-size: .9rem;
-                            }
-
-                            a {
-                                bottom: 1rem;
-                                margin: 0 auto;
-                            }
+                            height: 22vh;
+                            width: 80%;
                         }
                     }
                 }
@@ -1665,69 +1607,20 @@ body {
         }
 
         .contact {
-            height: max-content;
-
             .contact-heading {
-                padding: 3rem 0;
-
-                .contact-title {
-                    font-size: 1.7rem;
-                }
-
                 .contact-subtitle {
-                    font-size: .9rem;
+                    font-size: .8rem;
                 }
             }
 
             .contact-container {
                 .contact-content {
-                    flex-direction: column;
-                    margin: 0.1rem;
-
-                    .contact-info {
-                        .contactINFO {
-                            lord-icon {
-                                width: 3rem;
-                                height: 3rem;
-                            }
-
-                            .contact-icon-detail {
-                                margin: 1rem auto;
-
-                                p {
-                                    font-size: .9rem;
-                                    padding: 1rem;
-                                }
-                            }
-
-                            .contact-media {
-                                left: 2.5rem;
-                                bottom: 0;
-
-                            }
-                        }
-                    }
-
                     .contact-form {
-                        width: 80%;
-                        margin: 0 auto;
-
-                        .contact-button {
-                            button {
-                                left: 50%;
-                                transform: translate(-50%);
-                                font-size: .9rem;
-                            }
-                        }
+                        width: 100%;
                     }
                 }
             }
-
         }
-    }
-    footer {
-        font-size: .5rem;
-        // margin-left: 30px;
     }
 
 }

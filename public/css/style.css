@@ -1160,6 +1160,9 @@ footer {
     width: 100%;
     margin: 0 auto;
   }
+  body .projects .project-content .mySwiper {
+    margin: 0;
+  }
   body .projects .project-content .mySwiper .project-box {
     padding: 1rem;
   }
@@ -1270,14 +1273,8 @@ footer {
   body .about {
     height: 100vh;
   }
-  body .about .about-heading {
-    padding: 3rem 0;
-  }
-  body .about .about-heading .about-title {
-    font-size: 1.7rem;
-  }
   body .about .about-heading .about-subtitle {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   body .about .all-about-section {
     font-size: 0.9rem;
@@ -1287,7 +1284,7 @@ footer {
     flex-direction: column;
     align-items: center;
     height: 80vh;
-    width: 75%;
+    width: 90%;
   }
   body .about .all-about-section .about-section-box .about-section-desc {
     margin: 0;
@@ -1300,44 +1297,32 @@ footer {
   body .about .all-about-section .about-section-box img {
     margin: 1.5rem 0;
     height: 30vh;
-    width: 45%;
+    width: 50%;
   }
   body .skills {
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
   }
-  body .skills .skills-heading {
-    padding: 3rem 0 0;
-  }
-  body .skills .skills-heading .skills-title {
-    font-size: 1.7rem;
-  }
   body .skills .skills-heading .skills-subtitle {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   body .skills .skills-content .containerSkill {
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3rem;
-    padding: 3rem 3rem;
+    grid-gap: 1rem;
+    padding: 3rem 0.5rem;
   }
   body .skills .skills-content .containerSkill .skill-box {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   body .skills .skills-content .containerSkill .skill-box .skill-Title img {
-    width: 30%;
+    width: 50%;
   }
   body .qualifications {
     height: 100vh;
   }
-  body .qualifications .qualifications-heading {
-    padding: 3rem 2rem;
-  }
-  body .qualifications .qualifications-heading .qualifications-title {
-    font-size: 1.7rem;
-  }
   body .qualifications .qualifications-heading .qualifications-subtitle {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   body .qualifications .qualifications-CONTENT .qualification_tabs .qualification_button {
     font-size: 1.1rem;
@@ -1345,91 +1330,21 @@ footer {
   body .qualifications .qualifications-CONTENT .timeline {
     font-size: 0.9rem;
   }
-  body .projects .projects-heading {
-    padding: 3rem 0;
-  }
-  body .projects .projects-heading .projects-title {
-    font-size: 1.7rem;
-  }
   body .projects .projects-heading .project-subtitle {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   body .projects .project-content {
     width: 100%;
-    margin: 0 auto;
-  }
-  body .projects .project-content .mySwiper .project-box {
-    padding: 1rem;
-  }
-  body .projects .project-content .mySwiper .project-box .mainProject {
-    height: 70vh;
-    padding: 1rem;
-    flex-direction: column;
   }
   body .projects .project-content .mySwiper .project-box img {
-    margin: 1rem auto;
-    height: 25vh;
-    width: 70%;
-  }
-  body .projects .project-content .mySwiper .project-box .project-detail {
-    font-size: 0.9rem;
-    margin: 0rem;
-  }
-  body .projects .project-content .mySwiper .project-box .project-detail h3 {
-    font-size: 1rem;
-    margin-top: 1.1rem;
-  }
-  body .projects .project-content .mySwiper .project-box .project-detail p {
-    font-size: 0.9rem;
-  }
-  body .projects .project-content .mySwiper .project-box .project-detail a {
-    bottom: 1rem;
-    margin: 0 auto;
-  }
-  body .contact {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-  }
-  body .contact .contact-heading {
-    padding: 3rem 0;
-  }
-  body .contact .contact-heading .contact-title {
-    font-size: 1.7rem;
+    height: 22vh;
+    width: 80%;
   }
   body .contact .contact-heading .contact-subtitle {
-    font-size: 0.9rem;
-  }
-  body .contact .contact-container .contact-content {
-    flex-direction: column;
-    margin: 0.1rem;
-  }
-  body .contact .contact-container .contact-content .contact-info .contactINFO lord-icon {
-    width: 3rem;
-    height: 3rem;
-  }
-  body .contact .contact-container .contact-content .contact-info .contactINFO .contact-icon-detail {
-    margin: 1rem auto;
-  }
-  body .contact .contact-container .contact-content .contact-info .contactINFO .contact-icon-detail p {
-    font-size: 0.9rem;
-    padding: 1rem;
-  }
-  body .contact .contact-container .contact-content .contact-info .contactINFO .contact-media {
-    left: 2.5rem;
-    bottom: 0;
+    font-size: 0.8rem;
   }
   body .contact .contact-container .contact-content .contact-form {
-    width: 80%;
-    margin: 0 auto;
-  }
-  body .contact .contact-container .contact-content .contact-form .contact-button button {
-    left: 50%;
-    transform: translate(-50%);
-    font-size: 0.9rem;
-  }
-  footer {
-    font-size: 0.5rem;
+    width: 100%;
   }
 }
 ::-webkit-scrollbar {
