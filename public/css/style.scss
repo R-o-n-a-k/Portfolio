@@ -150,12 +150,6 @@ body {
                 color: var(--color-tertiary);
             }
 
-            // div{
-            //     margin: 5px;
-            //     width: 25px;
-            //     height: 3px;
-            //     background-color: var(--color-grey-1);
-            // }
         }
 
         
@@ -222,10 +216,9 @@ body {
             display: inline-block;
             margin: 1.5rem 0;
             border-radius: 0.3rem;
-            transition: var(--animate);
-            
             &:hover {
                     i{
+                        transition: var(--animate);
                         transform: translateY(.3rem);
                     }
                     background: var(--color-tertiary);
@@ -251,8 +244,9 @@ body {
             color: var(--color-secondary);
             font-size: 1.5rem;
             i{
-                transition: var(--animate);
+                
                 &:hover {
+                        transition: var(--animate);
                         transform: scale(1.1);
                         color: var(--color-tertiary);
                     }
@@ -317,9 +311,7 @@ body {
                 border-radius: .3rem;
                 height: 25rem;
                 width: 30%;
-                box-shadow: .1rem .1rem .7rem var(--color-grey-3);
-                transition: var(--animate);
-                
+                box-shadow: .1rem .1rem .7rem var(--color-grey-3);    
             }
         }
     }
@@ -367,6 +359,7 @@ body {
                 box-shadow: var(--box-shadow-1);
                 border-radius: .3rem;
                 &:hover{
+                    transition: var(--animate);
                     box-shadow: .1rem .1rem .7rem var(--color-secondary);
                 }
                 .skill-Title{
@@ -560,7 +553,7 @@ body {
             .timeline ul li:nth-child(even) div::before {
                 left: -15px;
                 border-width: 8px 16px 8px 0;
-                border-color: transparent var(--color-secondary) transparent transparent;
+                border-color: transparent var(--color-background-dark) transparent transparent;
             }
         }
         #education{
@@ -659,9 +652,9 @@ body {
                         display: inline-block;
                         margin: 1.5rem 0;
                         border-radius: 0.3rem;
-                        transition: var(--animate);
                         &:hover {
                             i{
+                                transition: var(--animate);
                                 transform: translateX(.4rem);
                             }
                             background: var(--color-tertiary);
@@ -837,8 +830,7 @@ body {
                         text-decoration: none;
                         font-weight: bold;
                         color: var(--color-grey0);
-                        border-radius: 0.3rem;
-                        transition: var(--animate);                        
+                        border-radius: 0.3rem;                       
                         i{
                             margin-left: .5rem;
                             font-size: 1.1rem;
@@ -846,6 +838,7 @@ body {
                         &:hover {
                             background: var(--color-tertiary);
                             i{
+                                transition: var(--animate);
                                 transform: translate3d(.2rem, -.2rem, 0);
                             }
                         }
@@ -1065,8 +1058,9 @@ footer{
                     top: 2.4rem;
                     right: -3rem;
                     width: 50%;
-                    background-color: transparent;
-                    backdrop-filter: blur(5rem);
+                    // background-color: transparent;
+                    // backdrop-filter: blur(5rem);
+                    background-color: var(--color-primary);
                     text-align: center;
                     z-index: 20;
                     display: none;
