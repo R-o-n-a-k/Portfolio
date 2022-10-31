@@ -812,6 +812,9 @@ footer {
     height: 15rem;
     width: 24rem;
   }
+  body .projects .project-content .mySwiper .project-box .project-detail a {
+    bottom: 1.5rem;
+  }
   body .contact .contact-container .contact-content {
     margin: 0 1rem;
   }
