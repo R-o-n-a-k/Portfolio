@@ -614,9 +614,6 @@ body {
   background-color: var(--color-secondary);
 }
 
-.contact {
-  height: 100vh;
-}
 .contact .contact-heading {
   letter-spacing: 0.1rem;
   display: flex;
@@ -843,7 +840,7 @@ footer {
     width: 24rem;
   }
   .projects .project-content .mySwiper .project-box .project-detail a {
-    bottom: 3rem;
+    bottom: 1.5rem;
   }
   .contact .contact-container .contact-content {
     margin: 0 1rem;
@@ -872,8 +869,8 @@ footer {
     height: 25rem;
     width: 35%;
   }
-  .projects .project-content {
-    height: 80vh;
+  .projects .project-content .mySwiper .project-box {
+    width: 100%;
   }
   .projects .project-content .mySwiper .project-box .mainProject {
     padding: 1;
@@ -881,13 +878,13 @@ footer {
   .projects .project-content .mySwiper .project-box img {
     margin-left: 1rem;
     height: 8rem;
-    width: 18rem;
+    width: 15rem;
   }
   .projects .project-content .mySwiper .project-box .project-detail {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .projects .project-content .mySwiper .project-box .project-detail a {
-    bottom: 7rem;
+    bottom: 1rem;
   }
   .contact .contact-container .contact-content {
     margin: 0 1rem;
@@ -920,7 +917,7 @@ footer {
     display: none;
   }
   .hero nav ul li {
-    padding: 1.9rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
   }
@@ -1072,7 +1069,7 @@ footer {
     top: 2rem;
   }
   body .hero nav ul li {
-    padding: 1.7rem;
+    padding: 1rem;
   }
   body .hero .my-img img {
     height: 35vh;
@@ -1308,7 +1305,7 @@ footer {
     padding: 0 1rem;
   }
   body .hero .social-media a i {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
   body .about {
     height: 100vh;
