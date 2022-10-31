@@ -25,7 +25,7 @@ html {
     --color-secondary:#1D9BF0;
     --color-tertiary: #47B5FF;
     // --color-quaternary: #C1EFFF;
-// #1E2732 #222d39
+    // #1E2732 #222d39
     --color-background-dark: #222d39;
     --color-lighestblue:#E8F9FD;
     --color-white: #FFFFFF;
@@ -223,8 +223,11 @@ body {
             margin: 1.5rem 0;
             border-radius: 0.3rem;
             transition: var(--animate);
+            
             &:hover {
-                    transform: scale(1.1);
+                    i{
+                        transform: translateY(.3rem);
+                    }
                     background: var(--color-tertiary);
                 }
         }
@@ -245,13 +248,13 @@ body {
         position: absolute;
         a {
             padding: 0 1.3rem;
-            color: var(--color-tertiary);
+            color: var(--color-secondary);
             font-size: 1.5rem;
             i{
                 transition: var(--animate);
                 &:hover {
                         transform: scale(1.1);
-                        color: var(--color-quaternary);
+                        color: var(--color-tertiary);
                     }
             }
         }              
@@ -298,13 +301,16 @@ body {
             padding:2rem;
             .about-section-desc{
                 text-align: justify;
-                border:solid 2px var(--color-secondary); 
+                border:solid 1.5px var(--color-secondary); 
                 padding: 2rem;
                 height: 25rem;
                 width: 70%;
                 margin-left: 5rem;
                 border-radius: .3rem;
                 box-shadow: .1rem .1rem .7rem var(--color-secondary);
+                span{
+                    color: var(--color-quaternary);
+                }
             }
             img {
                 margin-right: 5rem;
@@ -357,7 +363,7 @@ body {
             .skill-box{
                 
                 padding: 1.5rem 1rem;
-                border: 2px solid var(--color-secondary);
+                border: 1.5px solid var(--color-secondary);
                 box-shadow: var(--box-shadow-1);
                 border-radius: .3rem;
                 &:hover{
@@ -609,8 +615,8 @@ body {
                 padding: 4rem;
                 .mainProject{
                     height: 55vh;
-                    box-shadow: var(--box-shadow-1);
-                    border: 2px solid var(--color-secondary);
+                    box-shadow: .1rem .1rem .7rem var(--color-secondary);
+                    border: 1.5px solid var(--color-secondary);
                     padding: 2rem;
                     display: flex;   
                 }
@@ -765,7 +771,7 @@ body {
                 width: 30%;
                 padding: 2rem 0;
                 .contact-detail{ 
-                    border: 2px solid var(--color-secondary);
+                    border: 1.5px solid var(--color-secondary);
                     border-radius: .3rem;
                     margin: 2rem;
                     padding: .75rem 1rem .25rem;
@@ -792,7 +798,7 @@ body {
                         
                         &::placeholder{
                             font-size: .8rem;
-                            font-family: var(--subtitle-font);
+                            font-family: var(--body-font);
                             color:var(--color-grey-3);
                         }
                         
@@ -810,10 +816,11 @@ body {
                         margin-top: .5rem;
                         &::placeholder {
                             font-size: .8rem;
-                            font-family:var(--subtitle-font);
+                            font-family: var(--body-font);
                             color: var(--color-grey-3);
                             }
                     }
+                    
 
                 }
                 .contact-button{      

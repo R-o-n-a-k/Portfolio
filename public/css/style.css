@@ -219,8 +219,10 @@ body {
   transition: var(--animate);
 }
 .hero .hero-detail a:hover {
-  transform: scale(1.1);
   background: var(--color-tertiary);
+}
+.hero .hero-detail a:hover i {
+  transform: translateY(0.3rem);
 }
 .hero .my-img img {
   width: 40%;
@@ -236,7 +238,7 @@ body {
 }
 .hero .social-media a {
   padding: 0 1.3rem;
-  color: var(--color-tertiary);
+  color: var(--color-secondary);
   font-size: 1.5rem;
 }
 .hero .social-media a i {
@@ -244,7 +246,7 @@ body {
 }
 .hero .social-media a i:hover {
   transform: scale(1.1);
-  color: var(--color-quaternary);
+  color: var(--color-tertiary);
 }
 
 .about {
@@ -287,13 +289,16 @@ body {
 }
 .about .all-about-section .about-section-box .about-section-desc {
   text-align: justify;
-  border: solid 2px var(--color-secondary);
+  border: solid 1.5px var(--color-secondary);
   padding: 2rem;
   height: 25rem;
   width: 70%;
   margin-left: 5rem;
   border-radius: 0.3rem;
   box-shadow: 0.1rem 0.1rem 0.7rem var(--color-secondary);
+}
+.about .all-about-section .about-section-box .about-section-desc span {
+  color: var(--color-quaternary);
 }
 .about .all-about-section .about-section-box img {
   margin-right: 5rem;
@@ -342,7 +347,7 @@ body {
 }
 .skills .skills-content .containerSkill .skill-box {
   padding: 1.5rem 1rem;
-  border: 2px solid var(--color-secondary);
+  border: 1.5px solid var(--color-secondary);
   box-shadow: var(--box-shadow-1);
   border-radius: 0.3rem;
 }
@@ -553,8 +558,8 @@ body {
 }
 .projects .project-content .mySwiper .project-box .mainProject {
   height: 55vh;
-  box-shadow: var(--box-shadow-1);
-  border: 2px solid var(--color-secondary);
+  box-shadow: 0.1rem 0.1rem 0.7rem var(--color-secondary);
+  border: 1.5px solid var(--color-secondary);
   padding: 2rem;
   display: flex;
 }
@@ -693,7 +698,7 @@ body {
   padding: 2rem 0;
 }
 .contact .contact-container .contact-content .contact-form .contact-detail {
-  border: 2px solid var(--color-secondary);
+  border: 1.5px solid var(--color-secondary);
   border-radius: 0.3rem;
   margin: 2rem;
   padding: 0.75rem 1rem 0.25rem;
@@ -720,17 +725,17 @@ body {
 }
 .contact .contact-container .contact-content .contact-form .contact-detail input::-moz-placeholder {
   font-size: 0.8rem;
-  font-family: var(--subtitle-font);
+  font-family: var(--body-font);
   color: var(--color-grey-3);
 }
 .contact .contact-container .contact-content .contact-form .contact-detail input:-ms-input-placeholder {
   font-size: 0.8rem;
-  font-family: var(--subtitle-font);
+  font-family: var(--body-font);
   color: var(--color-grey-3);
 }
 .contact .contact-container .contact-content .contact-form .contact-detail input::placeholder {
   font-size: 0.8rem;
-  font-family: var(--subtitle-font);
+  font-family: var(--body-font);
   color: var(--color-grey-3);
 }
 .contact .contact-container .contact-content .contact-form .contact-detail textarea {
@@ -747,17 +752,17 @@ body {
 }
 .contact .contact-container .contact-content .contact-form .contact-detail textarea::-moz-placeholder {
   font-size: 0.8rem;
-  font-family: var(--subtitle-font);
+  font-family: var(--body-font);
   color: var(--color-grey-3);
 }
 .contact .contact-container .contact-content .contact-form .contact-detail textarea:-ms-input-placeholder {
   font-size: 0.8rem;
-  font-family: var(--subtitle-font);
+  font-family: var(--body-font);
   color: var(--color-grey-3);
 }
 .contact .contact-container .contact-content .contact-form .contact-detail textarea::placeholder {
   font-size: 0.8rem;
-  font-family: var(--subtitle-font);
+  font-family: var(--body-font);
   color: var(--color-grey-3);
 }
 .contact .contact-container .contact-content .contact-form .contact-button button {
