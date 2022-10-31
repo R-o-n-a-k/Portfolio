@@ -13,10 +13,12 @@ html {
 }
 
 :root {
-  --color-primary: #1b262c;
-  --color-secondary: #0f4c75;
-  --color-tertiary: #3282b8;
   --color-quaternary: #bbe1fa;
+  --color-primary: #15202B;
+  --color-secondary:#1D9BF0;
+  --color-tertiary: #47B5FF;
+  --color-background-dark: #222d39;
+  --color-lighestblue:#E8F9FD;
   --color-white: #FFFFFF;
   --color-black-0: #000;
   --color-black-1:#222831;
@@ -345,7 +347,7 @@ body {
   border-radius: 0.3rem;
 }
 .skills .skills-content .containerSkill .skill-box:hover {
-  background-color: var(--color-secondary);
+  box-shadow: 0.1rem 0.1rem 0.7rem var(--color-secondary);
 }
 .skills .skills-content .containerSkill .skill-box .skill-Title h3 {
   color: var(--color-grey-0);
@@ -428,7 +430,7 @@ body {
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: var(--color-secondary);
+  background: var(--color-background-dark);
   visibility: hidden;
   opacity: 0;
   transition: var(--animate);
@@ -443,7 +445,7 @@ body {
 }
 .qualifications .qualifications-CONTENT .timeline ul li div h3 {
   font-family: var(--body-font);
-  color: var(--color-title);
+  color: var(--color-tertiary);
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
@@ -467,7 +469,7 @@ body {
 .qualifications .qualifications-CONTENT .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent var(--color-secondary) transparent transparent;
+  border-color: transparent var(--color-background-dark) transparent transparent;
 }
 .qualifications .qualifications-CONTENT .timeline ul li:nth-child(even) div {
   left: -439px;
@@ -476,7 +478,7 @@ body {
 .qualifications .qualifications-CONTENT .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent var(--color-secondary);
+  border-color: transparent transparent transparent var(--color-background-dark);
 }
 @media screen and (max-width: 900px) {
   .qualifications .qualifications-CONTENT .timeline ul li div {
@@ -508,7 +510,7 @@ body {
   display: block;
 }
 .qualifications .qualifications-CONTENT .timeline ul li.in-view::after {
-  background: var(--color-secondary);
+  background: var(--color-grey-0);
 }
 .qualifications .qualifications-CONTENT .timeline ul li.in-view div {
   transform: none;

@@ -16,10 +16,18 @@ html {
 }
 :root {
     // -----------colors------------
-    --color-primary: #1b262c;
-    --color-secondary: #0f4c75;
-    --color-tertiary: #3282b8;
+    // --color-primary: #1b262c;
+    // --color-secondary: #0f4c75;
+    // --color-tertiary: #3282b8;
     --color-quaternary: #bbe1fa;
+     
+    --color-primary: #15202B;
+    --color-secondary:#1D9BF0;
+    --color-tertiary: #47B5FF;
+    // --color-quaternary: #C1EFFF;
+// #1E2732 #222d39
+    --color-background-dark: #222d39;
+    --color-lighestblue:#E8F9FD;
     --color-white: #FFFFFF;
     --color-black-0: #000;
     --color-black-1:#222831;
@@ -353,7 +361,7 @@ body {
                 box-shadow: var(--box-shadow-1);
                 border-radius: .3rem;
                 &:hover{
-                    background-color: var(--color-secondary);                    
+                    box-shadow: .1rem .1rem .7rem var(--color-secondary);
                 }
                 .skill-Title{
                     h3{
@@ -447,7 +455,6 @@ body {
                         z-index: 1;
                         //effects//
                         transition: background 0.5s ease-in-out;
-                        
                     }
 
                     div{
@@ -455,7 +462,7 @@ body {
                         bottom: 0;
                         width: 400px;
                         padding: 15px;
-                        background: var(--color-secondary);
+                        background: var(--color-background-dark);
 
                         &::before{
                             content: "";
@@ -468,7 +475,7 @@ body {
 
                         h3 {
                             font-family: var(--body-font);
-                            color: var(--color-title);
+                            color: var(--color-tertiary);
                             display: block;
                             font-weight: bold;
                             margin-bottom: 5px;
@@ -499,7 +506,7 @@ body {
                         &::before{
                             left: -15px;
                             border-width: 8px 16px 8px 0;
-                            border-color: transparent var(--color-secondary) transparent transparent;
+                            border-color: transparent var(--color-background-dark) transparent transparent;
                         }
                         ////effects////
                         transform: translate3d(200px, 0, 0);
@@ -511,7 +518,7 @@ body {
                         &::before{
                             right: -15px;
                             border-width: 8px 0 8px 16px;
-                            border-color: transparent transparent transparent var(--color-secondary);
+                            border-color: transparent transparent transparent var(--color-background-dark);
                         }
                         transform: translate3d(-200px, 0, 0);
                     }
@@ -555,7 +562,8 @@ body {
         }
         
         .timeline ul li.in-view::after {
-            background: var(--color-secondary);
+            // background: var(--color-quaternary);
+            background: var(--color-grey-0);
         }
         .timeline ul li.in-view div {
             transform: none;
