@@ -392,8 +392,8 @@ body {
 }
 
 .qualifications{
-    height: 100vh;
-
+//     height: 100vh;
+    height: max-content;
     .qualifications-heading {    
             display: flex;
             justify-content: center;
