@@ -51,7 +51,7 @@ body {
   color: var(--color-white);
 }
 
-/* --------------Scroll Button--------- */
+/* --------------Back To Top Button--------- */
 #myBtn {
   display: none;
   position: fixed;
@@ -108,10 +108,7 @@ body {
 }
 .hero nav img {
   margin-left: 4rem;
-  height: 8vh;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  height: 9vh;
 }
 .hero nav ul {
   margin: 2rem 3rem;
@@ -217,12 +214,26 @@ body {
   margin: 1.5rem 0;
   border-radius: 0.3rem;
 }
+.hero .hero-detail a i {
+  -webkit-animation: download 1s infinite;
+          animation: download 1s infinite;
+}
+@-webkit-keyframes download {
+  50% {
+    transform: translateY(0.3rem);
+  }
+}
+@keyframes download {
+  50% {
+    transform: translateY(0.3rem);
+  }
+}
 .hero .hero-detail a:hover {
   background: var(--color-tertiary);
 }
 .hero .hero-detail a:hover i {
-  transition: var(--animate);
   transform: translateY(0.3rem);
+  transition: var(--animate);
 }
 .hero .my-img img {
   width: 40%;
@@ -293,6 +304,8 @@ body {
   width: 70%;
   margin-left: 5rem;
   border-radius: 0.3rem;
+  -webkit-animation: borderBlink 1s infinte;
+          animation: borderBlink 1s infinte;
   box-shadow: 0.1rem 0.1rem 0.7rem var(--color-secondary);
 }
 .about .all-about-section .about-section-box .about-section-desc span {
@@ -303,7 +316,7 @@ body {
   border-radius: 0.3rem;
   height: 25rem;
   width: 30%;
-  box-shadow: 0.1rem 0.1rem 0.7rem var(--color-grey-3);
+  box-shadow: 0.1rem 0.1rem 1rem var(--color-grey-1);
 }
 
 .skills {
@@ -601,12 +614,26 @@ body {
   margin: 1.5rem 0;
   border-radius: 0.3rem;
 }
+.projects .project-content .mySwiper .project-box .project-detail a i {
+  -webkit-animation: projectArrow 1s infinite;
+          animation: projectArrow 1s infinite;
+}
 .projects .project-content .mySwiper .project-box .project-detail a:hover {
   background: var(--color-tertiary);
 }
 .projects .project-content .mySwiper .project-box .project-detail a:hover i {
   transition: var(--animate);
-  transform: translateX(0.4rem);
+  transform: translateX(0.3rem);
+}
+@-webkit-keyframes projectArrow {
+  50% {
+    transform: translateX(0.3rem);
+  }
+}
+@keyframes projectArrow {
+  50% {
+    transform: translateX(0.3rem);
+  }
 }
 .projects .project-content .mySwiper .swipeBtn {
   color: var(--color-secondary);
@@ -779,8 +806,20 @@ body {
   border-radius: 0.3rem;
 }
 .contact .contact-container .contact-content .contact-form .contact-button button i {
+  -webkit-animation: sendBtn 1s infinite;
+          animation: sendBtn 1s infinite;
   margin-left: 0.5rem;
   font-size: 1.1rem;
+}
+@-webkit-keyframes sendBtn {
+  50% {
+    transform: translate3d(0.2rem, -0.2rem, 0);
+  }
+}
+@keyframes sendBtn {
+  50% {
+    transform: translate3d(0.2rem, -0.2rem, 0);
+  }
 }
 .contact .contact-container .contact-content .contact-form .contact-button button:hover {
   background: var(--color-tertiary);
@@ -1062,7 +1101,7 @@ footer {
 @media only screen and (max-width: 767px) {
   body #myBtn {
     padding: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   body .hero {
     height: 100vh;
@@ -1160,14 +1199,14 @@ footer {
   }
   body .skills .skills-content .containerSkill {
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3rem;
-    padding: 3rem 3rem;
+    grid-gap: 0.5rem;
+    padding: 3rem 5rem;
   }
   body .skills .skills-content .containerSkill .skill-box {
     font-size: 0.9rem;
   }
   body .skills .skills-content .containerSkill .skill-box .skill-Title img {
-    width: 30%;
+    width: 25%;
   }
   body .qualifications {
     height: 100vh;
@@ -1353,13 +1392,13 @@ footer {
   body .skills .skills-content .containerSkill {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
-    padding: 3rem 0.5rem;
+    padding: 3rem 0.8rem;
   }
   body .skills .skills-content .containerSkill .skill-box {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   body .skills .skills-content .containerSkill .skill-box .skill-Title img {
-    width: 50%;
+    width: 40%;
   }
   body .qualifications {
     height: 100vh;
@@ -1377,7 +1416,7 @@ footer {
     font-size: 0.8rem;
   }
   body .projects .project-content {
-    width: 100%;
+    width: 97%;
   }
   body .projects .project-content .mySwiper .project-box img {
     height: 22vh;

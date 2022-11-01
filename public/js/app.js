@@ -100,7 +100,7 @@ const cursorSpan = document.querySelector('.cursor');
 const textArray = [
   'Frontend Developer.',
   'Automation Tester.',
-  'Senior Analyst',
+  'Senior Analyst.',
 ];
 const typingDelay = 120;
 const erasingDelay = 90;
@@ -143,5 +143,3 @@ window.addEventListener('load', function () {
   // On DOM Load initiate the effect
   if (textArray.length) setTimeout(type, newTextDelay + 200);
 });
-
-
