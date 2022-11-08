@@ -393,7 +393,7 @@ body {
 
 .qualifications{
     // height: 100vh;
-    height: auto;
+    height: max-content;
     .qualifications-heading {    
             display: flex;
             justify-content: center;
@@ -586,7 +586,7 @@ body {
 }
 
 .projects{
-    height: auto;
+    height: 100vh;
     background-color: var(--color-primary);
     .projects-heading {
         
@@ -904,9 +904,6 @@ footer{
                         width: 80%;
                     }
                 }      
-        }
-        .qualifications {
-            height: auto;
         }
         .projects {
                 .project-content {
