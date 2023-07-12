@@ -1,483 +1,515 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./img/R8.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./img/R8.png" />
 
     <!-- Link Swiper's CSS -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" /> -->
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 
     <!-- //////////////////unicon////////////// -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <!-- /////////////////////font awesome/////////////////////// -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
 
     <!-- my portfolio website -->
     <title>Ronak Patel</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- back to top button  -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
-
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
 
     <!-- =====================================homepage=========================================/= -->
     <section class="home" id="home">
+      <div class="hero">
+        <nav class="links-container">
+          <img src="img/R9.png" alt="" class="ronakLogo" />
+          <ul class="nav-links" id="navigation-bar">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#qualifications">QUALIFICATIONS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT ME</a></li>
+          </ul>
+          <button
+            type="button"
+            class="nav-toggle burger"
+            id="nav-toggle"
+            aria-label="nav-toggler"
+            onClick="onMenuClick()">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
 
-        <div class="hero">
-            <nav class="links-container">
-                <img src="img/R9.png" alt="" class="ronakLogo">
-                <ul class="nav-links" id="navigation-bar">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#qualifications">QUALIFICATIONS</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#contact">CONTACT ME</a></li>
+        <div class="hero-detail" id="home">
+          <h1>Hi, I'm <span>Ronak Patel</span></h1>
 
-                </ul>
-                <button type="button" class="nav-toggle burger" id="nav-toggle" aria-label="nav-toggler"
-                    onClick="onMenuClick()">
-                    <i class="fas fa-bars"></i>
-                </button>
+          <p>
+            <span class="typed-text"></span>
+            <span class="cursor typing">&nbsp;</span>
+          </p>
+          <br /><br />
 
-            </nav>
-
-            <div class="hero-detail" id="home">
-                <h1> Hi, I'm <span>Ronak Patel</span></h1>
-
-                <p>
-                    <span class="typed-text"></span>
-                    <span class="cursor typing">&nbsp;</span>
-                </p>
-                <br><br>
-
-                <a class="download-cv" download="" href="img/Ronak Patel (Resume).pdf"> Download CV <i
-                        class="fa-solid fa-angles-down"></i></a>
-            </div>
-            <div class="my-img">
-                <img src="img/hero-img.svg" alt="" class="undraw-img">
-            </div>
-
-            <div class="social-media">
-                <a class="" href="https://github.com/R-o-n-a-k" target="_blank"><i class="fab fa-github"></i></a>
-                <a class="" href="https://www.linkedin.com/in/ronak-j-patel/" target="_blank"><i
-                        class="fab fa-linkedin"></i></a>
-                <a class="" href="https://www.instagram.com/rroonnaakk_/" target="_blank"><i class="fab fa-instagram"
-                        target="_blank">
-                    </i></a>
-            </div>
-
+          <a
+            class="download-cv"
+            download=""
+            href="img/Ronak Patel (Resume).pdf">
+            Download CV <i class="fa-solid fa-angles-down"></i
+          ></a>
+        </div>
+        <div class="my-img">
+          <img src="img/hero-img.svg" alt="" class="undraw-img" />
         </div>
 
+        <div class="social-media">
+          <a class="" href="https://github.com/R-o-n-a-k" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            class=""
+            href="https://www.linkedin.com/in/ronak-j-patel/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            class=""
+            href="https://www.instagram.com/rroonnaakk_/"
+            target="_blank"
+            ><i class="fab fa-instagram" target="_blank"> </i
+          ></a>
+        </div>
+      </div>
     </section>
     <!-- =====================================aboutpage=========================================/= -->
     <section class="about" id="about">
-        <div class="about-heading">
-            <h2 class="about-title">ABOUT ME</h2>
-            <p class="about-subtitle">My Introduction </p>
+      <div class="about-heading">
+        <h2 class="about-title">ABOUT ME</h2>
+        <p class="about-subtitle">My Introduction</p>
+      </div>
+      <div class="all-about-section">
+        <div class="about-section-box">
+          <div class="about-section">
+            <p class="about-section-desc">
+              <b
+                ><span><i>Hi! I'm Ronak Jignesh Patel!</i></span></b
+              ><br /><br />I am a professional and passionate programmer. <br />
+              A quick learner with a self-learning attitude. I love to learn and
+              explore new technologies and am Passionate about Problem Solving.
+              Love almost all the stacks of Software Engineering.
+            </p>
+          </div>
+          <img src="img/about-me1.png" class="about-section-img" />
         </div>
-        <div class="all-about-section">
-            <div class="about-section-box">
-                <div class="about-section">
-                    <p class="about-section-desc"><b><span><i>Hi! I'm Ronak Jignesh Patel!</i></span></b><br><br>I am a
-                        professional
-                        and passionate programmer.
-                        <br> A quick learner with a self-learning attitude. I love to
-                        learn and explore new technologies and am Passionate about Problem Solving. Love almost all the
-                        stacks of Software Engineering.
-
-                    </p>
-                </div>
-                <img src="img/about-me1.png" class="about-section-img">
-            </div>
-        </div>
-
+      </div>
     </section>
     <!-- =====================================skillspage=========================================/= -->
     <section class="skills" id="skills">
-        <div class="skills-heading">
-            <h2 class="skills-title">SKILLS</h2>
-            <p class="skills-subtitle">My Technical Skills</p>
-        </div>
+      <div class="skills-heading">
+        <h2 class="skills-title">SKILLS</h2>
+        <p class="skills-subtitle">My Technical Skills</p>
+      </div>
 
-        <div class="skills-content">
-
-            <div class="containerSkill">
-
-                <div class="skill-box">
-                    <div class="skill-Title">
-                        <div class="img">
-                            <img src="img/skills/html-5.png" alt="">
-                            <h3>Html5</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-box">
-                    <div class="skill-Title">
-                        <div class="img">
-                            <img src="img/skills/css3.png" alt="">
-                            <h3>CSS3</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-box">
-                    <div class="skill-Title">
-                        <div class="img">
-                            <img src="img/skills/js.png" alt="">
-                            <h3>JavaSript</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-box">
-                    <div class="skill-Title">
-                        <div class="img">
-                            <img src="img/skills/sass.png" alt="">
-                            <h3>Sass</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-box">
-                    <div class="skill-Title">
-                        <div class="img">
-                            <img src="img/skills/git.png" alt="">
-                            <h3>Git</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-box">
-                    <div class="skill-Title">
-                        <div class="img">
-                            <img src="img/skills/python.png" alt="">
-                            <h3>Python</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-box">
-                    <div class="skill-Title">
-                        <div class="img">
-                            <img src="img/skills/java.png" alt="">
-                            <h3>Java</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-box">
-                    <div class="skill-Title">
-                        <div class="img">
-                            <img src="img/skills/cpp.png" alt="">
-                            <h3>C++</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-box">
-                    <div class="skill-Title">
-                        <div class="img">
-                            <img src="img/skills/sql.png" alt="">
-                            <h3>MySql</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-box">
-                    <div class="skill-Title">
-                        <div class="img">
-                            <img src="img/skills/selenium.png" alt="">
-                            <h3>Selenium</h3>
-                        </div>
-                    </div>
-                </div>
-
-
-
+      <div class="skills-content">
+        <div class="containerSkill">
+          <div class="skill-box">
+            <div class="skill-Title">
+              <div class="img">
+                <img src="img/skills/html-5.png" alt="" />
+                <h3>Html5</h3>
+              </div>
             </div>
+          </div>
 
+          <div class="skill-box">
+            <div class="skill-Title">
+              <div class="img">
+                <img src="img/skills/css3.png" alt="" />
+                <h3>CSS3</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-Title">
+              <div class="img">
+                <img src="img/skills/js.png" alt="" />
+                <h3>JavaSript</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-Title">
+              <div class="img">
+                <img src="img/skills/sass.png" alt="" />
+                <h3>Sass</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-Title">
+              <div class="img">
+                <img src="img/skills/git.png" alt="" />
+                <h3>Git</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-Title">
+              <div class="img">
+                <img src="img/skills/python.png" alt="" />
+                <h3>Python</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-Title">
+              <div class="img">
+                <img src="img/skills/java.png" alt="" />
+                <h3>Java</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-Title">
+              <div class="img">
+                <img src="img/skills/cpp.png" alt="" />
+                <h3>C++</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-Title">
+              <div class="img">
+                <img src="img/skills/sql.png" alt="" />
+                <h3>MySql</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-Title">
+              <div class="img">
+                <img src="img/skills/selenium.png" alt="" />
+                <h3>Selenium</h3>
+              </div>
+            </div>
+          </div>
         </div>
-
+      </div>
     </section>
 
     <!-- =====================================qualifications=========================================/= -->
 
-    <section class="qualifications" id="qualifications" style="height: auto;">
+    <section class="qualifications" id="qualifications" style="height: auto">
+      <div class="qualifications-heading">
+        <h2 class="qualifications-title">Qualifications</h2>
+        <p class="qualifications-subtitle">
+          My Educational Qualification & Work Experience
+        </p>
+      </div>
 
-        <div class=" qualifications-heading">
-            <h2 class="qualifications-title">Qualifications</h2>
-            <p class="qualifications-subtitle">My Educational Qualification & Work Experience</p>
-        </div>
+      <div class="qualifications-CONTENT">
+        <div class="qualification_container container">
+          <div class="qualification_tabs">
+            <button
+              class="qualification_button button-flex btn-active"
+              id="educationheader"
+              onclick="clickButton(this.id)">
+              <i class="uil uil-graduation-cap qualification_icon"></i>Education
+            </button>
 
-        <div class="qualifications-CONTENT">
+            <button
+              class="qualification_button button-flex btn-inactive"
+              id="workheader"
+              onclick="clickButton(this.id)">
+              <i class="uil uil-briefcase-alt qualification_icon"></i>Work
+            </button>
+          </div>
 
-            <div class="qualification_container container">
-
-                <div class="qualification_tabs">
-                    <button class="qualification_button button-flex btn-active" id="educationheader"
-                        onclick="clickButton(this.id)">
-                        <i class="uil uil-graduation-cap qualification_icon"></i>Education
-                    </button>
-
-                    <button class="qualification_button button-flex btn-inactive" id="workheader"
-                        onclick="clickButton(this.id)">
-                        <i class="uil uil-briefcase-alt qualification_icon"></i>Work
-                    </button>
+          <section class="timeline qualification__active" id="education">
+            <ul>
+              <li>
+                <div>
+                  <h3>B.E. Information Technology</h3>
+                  <span>Atharva College of Engineering</span>
+                  <p><i class="fa-regular fa-calendar-days"></i>2018-2022</p>
                 </div>
+              </li>
 
-                <section class="timeline qualification__active" id="education">
-                    <ul>
-                        <li>
-                            <div>
-                                <h3>B.E. Information Technology</h3>
-                                <span>Atharva College of Engineering</span>
-                                <p><i class="fa-regular fa-calendar-days"></i>2018-2022</p>
-                            </div>
-                        </li>
+              <li>
+                <div>
+                  <h3>HSC</h3>
+                  <span>Nirmala Memorial College</span>
+                  <p><i class="fa-regular fa-calendar-days"></i>2016-2018</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>SSC</h3>
+                  <span>Poorna Prajna High School</span>
+                  <p><i class="fa-regular fa-calendar-days"></i>2008-2016</p>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-                        <li>
-                            <div>
-                                <h3>HSC</h3>
-                                <span>Nirmala Memorial College</span>
-                                <p><i class="fa-regular fa-calendar-days"></i>2016-2018</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <h3>SSC</h3>
-                                <span>Poorna Prajna High School</span>
-                                <p><i class="fa-regular fa-calendar-days"></i>2008-2016</p>
-                            </div>
-                        </li>
+          <section class="timeline qualification__inactive" id="work">
+            <ul>
+              <li>
+                <div>
+                  <h3>Senior Analyst</h3>
+                  <span>Capgemini</span>
+                  <p><i class="fa-regular fa-calendar-days"></i>Current</p>
+                </div>
+              </li>
 
-                    </ul>
-                </section>
-
-                <section class="timeline qualification__inactive" id="work">
-                    <ul>
-                        <li>
-                            <div>
-                                <h3>Senior Analyst</h3>
-                                <span>Capgemini</span>
-                                <p><i class="fa-regular fa-calendar-days"></i>Current</p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div>
-                                <h3>Web Developer</h3>
-                                <span>Techq Konnect Technologies</span>
-                                <p><i class="fa-regular fa-calendar-days"></i>Aug 2021-Sept 2021</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <h3>Web Developer</h3>
-                                <span>Sahu Technologies</span>
-                                <p><i class="fa-regular fa-calendar-days"></i>Jun 2021-Jul 2021</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <h3>Web Developer</h3>
-                                <span>Sparks Foundation</span>
-                                <p><i class="fa-regular fa-calendar-days"></i>May 2021-Jun 2021</p>
-                            </div>
-                        </li>
-
-                    </ul>
-                </section>
-
-
-
-            </div>
-
-
+              <li>
+                <div>
+                  <h3>Web Developer</h3>
+                  <span>Techq Konnect Technologies</span>
+                  <p>
+                    <i class="fa-regular fa-calendar-days"></i>Aug 2021-Sept
+                    2021
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>Web Developer</h3>
+                  <span>Sahu Technologies</span>
+                  <p>
+                    <i class="fa-regular fa-calendar-days"></i>Jun 2021-Jul 2021
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>Web Developer</h3>
+                  <span>Sparks Foundation</span>
+                  <p>
+                    <i class="fa-regular fa-calendar-days"></i>May 2021-Jun 2021
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
         </div>
-
+      </div>
     </section>
 
     <!-- =====================================projects=========================================/= -->
 
     <section class="projects" id="projects">
-        <div class=" projects-heading">
-            <h2 class="projects-title">Projects</h2>
-            <p class="projects-subtitle">Some of my Work</p>
-        </div>
+      <div class="projects-heading">
+        <h2 class="projects-title">Projects</h2>
+        <p class="projects-subtitle">Some of my Work</p>
+      </div>
 
-        <div class="project-content">
-
-            <div class="swiper mySwiper">
-
-                <div class="swiper-wrapper">
-
-                    <div class="project-box swiper-slide">
-                        <div class="mainProject">
-                            <img src="img/fnd.gif" alt="">
-                            <div class="project-detail">
-                                <h3>
-                                    Fake News Detection
-                                </h3>
-                                <p>
-                                    An ML model that predicts that if the news is real or fake using <span>Passive
-                                        Aggressive, Naïve Bayes & Random Forest</span> using datasets available on
-                                    Kaggle.
-                                </p>
-                                <a href="https://f-n-d.herokuapp.com/" target="_blank">Check out <i
-                                        class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-box swiper-slide">
-                        <div class="mainProject">
-                            <img src="img/orion.gif" alt="">
-                            <div class="project-detail">
-                                <h3>
-                                    Orion
-                                </h3>
-                                <p>
-                                    A fully-fledged responsive website for Interior Design using HTML, CSS & JS.
-                                    <br><br>
-                                    Payment Gateway integration using <span>RazorPay</span>.
-                                </p>
-                                <a href="https://orion-pi.vercel.app/" target="_blank">Check out <i
-                                        class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-box swiper-slide">
-                        <div class="mainProject">
-                            <img src="img/covid.gif" alt="">
-                            <div class="project-detail">
-                                <h3>
-                                    COVID Probability Detector
-                                </h3>
-                                <p>An ML model which predicts the probability of a person having the infection using a
-                                    self-made dataset
-                                    implemented by <span>Logistic Regression</span> algorithm.
-                                </p>
-                                <a href="https://github.com/R-o-n-a-k/COVID-Probabitlity-Detector" target="_blank">Check
-                                    out <i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-box swiper-slide">
-                        <div class="mainProject">
-                            <img src="img/portfolioLatest.gif" alt="">
-                            <div class="project-detail">
-                                <h3>
-                                    Personal Portfolio Website
-                                </h3>
-                                <p>
-                                    My Personal Portfolio Website made using only <span>HTML, CSS and JS</span> with a
-                                    clean and minimal UI.
-                                </p>
-                                <a href="https://portfolio-r-o-n-a-k.vercel.app/" target="_blank">Check out <i
-                                        class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
+      <div class="project-content">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="project-box swiper-slide">
+              <div class="mainProject">
+                <img src="img/fnd.gif" alt="" />
+                <div class="project-detail">
+                  <h3>Fake News Detection</h3>
+                  <p>
+                    An ML model that predicts that if the news is real or fake
+                    using
+                    <span>Passive Aggressive, Naïve Bayes & Random Forest</span>
+                    using datasets available on Kaggle.
+                  </p>
+                  <a
+                    href="https://github.com/R-o-n-a-k/FakeNewsDetection"
+                    target="_blank"
+                    >Check out <i class="fa-solid fa-arrow-right"></i
+                  ></a>
                 </div>
-
-                <div class="swiper-button-next swipeBtn"></div>
-                <div class="swiper-button-prev swipeBtn"></div>
-                <div class="swiper-pagination"></div>
+              </div>
             </div>
 
+            <div class="project-box swiper-slide">
+              <div class="mainProject">
+                <img src="img/orion.gif" alt="" />
+                <div class="project-detail">
+                  <h3>Orion</h3>
+                  <p>
+                    A fully-fledged responsive website for Interior Design using
+                    HTML, CSS & JS.
+                    <br /><br />
+                    Payment Gateway integration using <span>RazorPay</span>.
+                  </p>
+                  <a href="https://orion-pi.vercel.app/" target="_blank"
+                    >Check out <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-box swiper-slide">
+              <div class="mainProject">
+                <img src="img/covid.gif" alt="" />
+                <div class="project-detail">
+                  <h3>COVID Probability Detector</h3>
+                  <p>
+                    An ML model which predicts the probability of a person
+                    having the infection using a self-made dataset implemented
+                    by <span>Logistic Regression</span> algorithm.
+                  </p>
+                  <a
+                    href="https://github.com/R-o-n-a-k/COVID-Probabitlity-Detector"
+                    target="_blank"
+                    >Check out <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-box swiper-slide">
+              <div class="mainProject">
+                <img src="img/portfolioLatest.gif" alt="" />
+                <div class="project-detail">
+                  <h3>Personal Portfolio Website</h3>
+                  <p>
+                    My Personal Portfolio Website made using only
+                    <span>HTML, CSS and JS</span> with a clean and minimal UI.
+                  </p>
+                  <a
+                    href="https://github.com/R-o-n-a-k/Portfolio"
+                    target="_blank"
+                    >Check out <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next swipeBtn"></div>
+          <div class="swiper-button-prev swipeBtn"></div>
+          <div class="swiper-pagination"></div>
         </div>
-
-
+      </div>
     </section>
 
     <!-- =====================================contact me=========================================/= -->
 
     <section class="contact" id="contact">
-        <div class=" contact-heading">
-            <h2 class="contact-title">Contact Me</h2>
-            <p class="contact-subtitle">Want to connect? I’m always up for a chat.</p>
-        </div>
+      <div class="contact-heading">
+        <h2 class="contact-title">Contact Me</h2>
+        <p class="contact-subtitle">
+          Want to connect? I’m always up for a chat.
+        </p>
+      </div>
 
-        <div class="contact-container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contactINFO">
-                        <div class="contact-icon-detail">
-                            <span class="fas fa-envelope"></span>
-                            <p>ronak.p.1206@gmail.com</p>
-                        </div>
-                        <!-- <div class="contact-icon-detail">
+      <div class="contact-container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contactINFO">
+              <div class="contact-icon-detail">
+                <span class="fas fa-envelope"></span>
+                <p>ronak.p.1206@gmail.com</p>
+              </div>
+              <!-- <div class="contact-icon-detail">
                             <span class="fas fa-phone-alt"></span>
                             <p>+91 9819518418</p>
                         </div> -->
-                        <div class="contact-icon-detail">
-                            <span class="fas fa-map-marker-alt"></span>
-                            <p>Mumbai, India</p>
-                        </div>
-                        <div class="contact-media">
-                            <a class="" href="https://github.com/R-o-n-a-k" target="_blank"><i
-                                    class="fab fa-github"></i></a>
-                            <a class="" href="https://www.linkedin.com/in/ronak-j-patel/"><i
-                                    class="fa-brands fa-linkedin-in" target="_blank"></i></a>
-                            <a class="" href="https://www.instagram.com/rroonnaakk_/" target="_blank"><i
-                                    class="fab fa-instagram" target="_blank"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <form class="contact-form" id="contact-form" name="contact-form"
-                    action="https://formspree.io/f/mdojlrrq" method="POST">
-
-                    <div class="contact-detail">
-                        <label for="" class="contact-label">Name</label>
-                        <input type="text" name="name" class="contact-input" placeholder="FirstName LastName " required>
-                    </div>
-
-                    <div class="contact-detail">
-                        <label for="" class="contact-label">Email</label>
-                        <input type="email" name="email" class="contact-input" placeholder="example@gmail.com" required>
-                    </div>
-
-
-                    <div class="contact-detail">
-                        <label for="" class="contact-label">Message</label><br>
-                        <textarea name="message" class="contact-textarea" cols="0" rows="5"
-                            placeholder="Type your message..." required></textarea>
-                    </div>
-
-                    <div class="contact-button">
-                        <button type="submit">Send<i class="fa-regular fa-paper-plane"></i></button>
-                    </div>
-
-                </form>
-
-                <div class="imageDIV"><img src="img/contact.svg" alt="" class="contact-img">
-                </div>
-
+              <div class="contact-icon-detail">
+                <span class="fas fa-map-marker-alt"></span>
+                <p>Mumbai, India</p>
+              </div>
+              <div class="contact-media">
+                <a class="" href="https://github.com/R-o-n-a-k" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a class="" href="https://www.linkedin.com/in/ronak-j-patel/"
+                  ><i class="fa-brands fa-linkedin-in" target="_blank"></i
+                ></a>
+                <a
+                  class=""
+                  href="https://www.instagram.com/rroonnaakk_/"
+                  target="_blank"
+                  ><i class="fab fa-instagram" target="_blank"></i
+                ></a>
+              </div>
             </div>
+          </div>
+
+          <form
+            class="contact-form"
+            id="contact-form"
+            name="contact-form"
+            action="https://formspree.io/f/mdojlrrq"
+            method="POST">
+            <div class="contact-detail">
+              <label for="" class="contact-label">Name</label>
+              <input
+                type="text"
+                name="name"
+                class="contact-input"
+                placeholder="FirstName LastName "
+                required />
+            </div>
+
+            <div class="contact-detail">
+              <label for="" class="contact-label">Email</label>
+              <input
+                type="email"
+                name="email"
+                class="contact-input"
+                placeholder="example@gmail.com"
+                required />
+            </div>
+
+            <div class="contact-detail">
+              <label for="" class="contact-label">Message</label><br />
+              <textarea
+                name="message"
+                class="contact-textarea"
+                cols="0"
+                rows="5"
+                placeholder="Type your message..."
+                required></textarea>
+            </div>
+
+            <div class="contact-button">
+              <button type="submit">
+                Send<i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+
+          <div class="imageDIV">
+            <img src="img/contact.svg" alt="" class="contact-img" />
+          </div>
         </div>
-
-
+      </div>
     </section>
 
     <footer>
-        <p class="copyright"> Created by RONAK | <i class="fa-regular fa-copyright"></i> 2022 All rights reserved.
-        </p>
-
+      <p class="copyright">
+        Created by RONAK | <i class="fa-regular fa-copyright"></i> 2023 All
+        rights reserved.
+      </p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
@@ -485,14 +517,16 @@
     <!-- Swiper JS -->
     <script src="./js/swiper-bundle.min.js"></script>
     <!-- --GSAP Scroll tigger-- -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+      defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+      defer></script>
     <!-- scroll js -->
     <script src="./js/scroll.js" defer></script>
 
     <!-- ---lordicon--- -->
     <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
-
-</body>
-
+  </body>
 </html>
