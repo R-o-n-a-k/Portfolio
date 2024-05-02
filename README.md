@@ -44,10 +44,11 @@ To Fork the repo click on the fork button at the top right of the page. Once the
 
 ```
 git clone [repository_url]
-
+```
+```
 cd Portfolio
 ```
 
 ### Runing Project
 
-Open ***index.html***
+Open `index.html`
