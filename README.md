@@ -9,18 +9,18 @@ This is my **personal portfolio website** built using **HTML, CSS, SCSS, and Jav
 
 ## 🛠️ Technologies Used
 
-- 🎨 **Frontend:** HTML5, CSS3, SCSS, JavaScript
-- ⚙️ **Animations:** [GSAP](https://gsap.com/)
-- ✉️ **Form Handling:** [Formspree](https://formspree.io/)
-- ☁️ **Deployment:** Vercel
+- **Frontend:** HTML5, CSS3, SCSS, JavaScript
+- **Animations:** [GSAP](https://gsap.com/)
+- **Form Handling:** [Formspree](https://formspree.io/)
+- **Deployment:** Vercel
 
 ## ✨ Features
 
-- ✅ Clean and minimal UI with smooth transitions
-- ✉️ Contact form powered by Formspree
-- 🚀 GSAP animations on scroll
-- 📱 Fully responsive design for all screen sizes
-- 🎨 SCSS support for modular styling
+- Clean and minimal UI with smooth transitions
+- Contact form powered by Formspree
+- GSAP animations on scroll
+- Fully responsive design for all screen sizes
+- SCSS support for modular styling
 
 ## 🖌️ Color Reference
 
